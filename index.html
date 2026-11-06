@@ -1,0 +1,2036 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gem Guide 宝石选购指南</title>
+<meta name="description" content="面向新手的宝石探索、知识学习与购买决策平台。Discover · Learn · Compare · Choose. Learn before you buy.">
+<style>
+:root{
+  --bg:#f7f4ee; --card:#ffffff; --ink:#1f1d1a; --muted:#6f6a62; --line:#e6e0d5;
+  --soft:#f0ebe1; --accent:#7a5c2e; --accent-ink:#ffffff;
+  --ok:#2e7d4f; --ok-bg:#e5f3ea; --mid:#9a6a10; --mid-bg:#fbf0d9; --warn:#b3362b; --warn-bg:#fbe5e2;
+  --shadow:0 1px 2px rgba(40,30,10,.06),0 4px 16px rgba(40,30,10,.06);
+  --serif:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#16151a; --card:#201f25; --ink:#f0ece4; --muted:#a39d93; --line:#34323a;
+    --soft:#2a2930; --accent:#d4b47a; --accent-ink:#1b1a1e;
+    --ok:#7fd3a0; --ok-bg:#1f3529; --mid:#e8c069; --mid-bg:#3a3020; --warn:#f19a8f; --warn-bg:#3d2320;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16151a; --card:#201f25; --ink:#f0ece4; --muted:#a39d93; --line:#34323a;
+  --soft:#2a2930; --accent:#d4b47a; --accent-ink:#1b1a1e;
+  --ok:#7fd3a0; --ok-bg:#1f3529; --mid:#e8c069; --mid-bg:#3a3020; --warn:#f19a8f; --warn-bg:#3d2320;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+/* Top bar */
+.topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;min-height:60px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1.15;flex:none}
+.logo b{font-family:var(--serif);font-size:19px;letter-spacing:.06em}
+.logo b span{color:var(--accent)}
+.logo small{font-size:10.5px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+nav.main{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{text-decoration:none;padding:7px 12px;border-radius:999px;font-size:14px;white-space:nowrap;color:var(--muted);display:flex;align-items:center;gap:6px}
+nav.main a:hover{color:var(--ink);background:var(--soft)}
+nav.main a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+nav.main a small{font-size:10.5px;opacity:.7}
+nav.main .cnt{background:var(--accent);color:var(--accent-ink);border-radius:999px;font-size:11px;padding:0 6px;line-height:17px}
+
+.langsw{display:flex;flex:none;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.langsw button{border:0;background:none;border-radius:999px;padding:4px 10px;font-size:12.5px;font-weight:600;color:var(--muted);line-height:1.2}
+.langsw button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+html[lang="en"] table.enc td[data-l]::before,html[lang="en"] table.stack td[data-l]::before{content:attr(data-l)": "}
+html[lang="en"] .bill{background:linear-gradient(135deg,#8dbb84,#4c8447);border-color:#386634;font-size:12px}
+.page[hidden]{display:none}
+.page-head{padding:34px 0 8px}
+.page-head .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.page-head h1{font-family:var(--serif);font-size:clamp(26px,4vw,38px);margin:6px 0 6px;line-height:1.2}
+.page-head p{color:var(--muted);max-width:680px;margin:0}
+h2.sec{font-family:var(--serif);font-size:21px;margin:34px 0 12px}
+h2.sec small{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+
+/* Hero */
+header.hero{padding:34px 0 10px}
+h1.big{font-family:var(--serif);font-size:clamp(30px,5vw,48px);line-height:1.15;margin:0 0 8px;font-weight:700}
+h1.big em{font-style:normal;color:var(--accent)}
+.lede{color:var(--muted);max-width:640px;margin:0}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;padding:0;list-style:none}
+.steps a{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 6px;font-size:13px;text-decoration:none}
+.steps a:hover{border-color:var(--ink)}
+.steps .n{width:22px;height:22px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:12px;font-weight:600}
+.steps small{color:var(--muted)}
+
+details.primer{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 16px}
+details.primer summary{cursor:pointer;padding:12px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.primer summary::-webkit-details-marker{display:none}
+details.primer summary::after{content:"＋";color:var(--muted)}
+details.primer[open] summary::after{content:"－"}
+.primer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;padding-bottom:16px}
+.primer-grid div{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:14px}
+.primer-grid b{display:block;margin-bottom:4px}
+
+/* Panel & filters */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow);margin-top:22px}
+.panel h2{font-family:var(--serif);font-size:20px;margin:0 0 4px}
+.panel .hint{color:var(--muted);font-size:13px;margin:0 0 16px}
+.colors{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:4px}
+.chip{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px 8px;border:1px solid transparent;border-radius:14px;background:none;transition:background .15s,border-color .15s}
+.chip:hover{background:var(--soft)}
+.chip .dot{width:42px;height:42px;border-radius:50%;box-shadow:inset 0 -6px 10px rgba(0,0,0,.18),inset 0 4px 8px rgba(255,255,255,.35),0 0 0 1px rgba(0,0,0,.08);position:relative;transition:transform .15s}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--soft)}
+.chip[aria-pressed="true"] .dot{transform:scale(1.08)}
+.chip[aria-pressed="true"] .dot::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.chip .lbl{font-size:13px;line-height:1.2}
+.chip .cnt{font-size:11px;color:var(--muted)}
+
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 20px;margin-top:18px;padding-top:18px;border-top:1px dashed var(--line)}
+.fgroup.wide{grid-column:1/-1}
+.fgroup label.t{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-bottom:6px;letter-spacing:.04em}
+.fgroup label.t a{color:var(--accent);text-decoration:none}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.seg.x button[aria-pressed="true"]{background:var(--warn-bg);color:var(--warn);border-color:var(--warn);text-decoration:line-through}
+.fselect{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:13px}
+.ftools{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:12.5px;color:var(--muted)}
+.linkbtn{background:none;border:0;color:var(--accent);padding:0;font-size:13px}
+
+/* Results */
+.resbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between;margin:28px 0 14px}
+.resbar h2{font-family:var(--serif);font-size:20px;margin:0}
+.resbar h2 small{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tools input,.tools select{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 10px;font-size:14px;min-width:0}
+.tools input{width:190px}
+.active-colors{display:flex;gap:6px;flex-wrap:wrap;margin:-4px 0 12px}
+.active-colors span{font-size:12px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 10px 2px 4px;display:inline-flex;align-items:center;gap:6px}
+.active-colors i{width:14px;height:14px;border-radius:50%;display:inline-block;box-shadow:0 0 0 1px rgba(0,0,0,.1)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:transform .15s,box-shadow .15s;text-align:left;padding:0}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card .top{position:relative;height:120px;display:grid;place-items:center}
+.card .top svg{width:84px;height:84px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.18))}
+.tint{background:linear-gradient(160deg,color-mix(in srgb,var(--h) 14%,var(--card)),color-mix(in srgb,var(--h) 34%,var(--card)))}
+.badge{position:absolute;top:10px;left:10px;font-size:11px;padding:2px 8px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600}
+.badge.syn{left:auto;right:10px;background:var(--card);color:var(--muted);border:1px solid var(--line);font-weight:500}
+.card .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{margin:0;font-family:var(--serif);font-size:18px;line-height:1.25}
+.card h3 small{display:block;font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:400;margin-top:2px}
+.card .line{font-size:13px;color:var(--muted);margin:0}
+.dots{display:flex;gap:4px;flex-wrap:wrap}
+.dots i{width:12px;height:12px;border-radius:50%;box-shadow:0 0 0 1px var(--line)}
+.dots i.on{box-shadow:0 0 0 2px var(--card),0 0 0 3px var(--ink)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:12.5px;align-items:center;margin:auto 0 0}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0}
+.meta .tl{color:var(--muted);font-size:11.5px;margin-left:6px}
+.pr{letter-spacing:1px}
+.pr span{opacity:.25}
+.bar{display:inline-flex;gap:2px;vertical-align:middle}
+.bar i{width:14px;height:6px;border-radius:2px;background:var(--line)}
+.bar i.on{background:var(--ink)}
+.bar-txt{font-size:12px;color:var(--muted);margin-left:6px}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;font-weight:500;white-space:nowrap}
+.tag.ok{background:var(--ok-bg);color:var(--ok)}
+.tag.mid{background:var(--mid-bg);color:var(--mid)}
+.tag.warn{background:var(--warn-bg);color:var(--warn)}
+.tag.na{background:var(--soft);color:var(--muted)}
+.cmp-btn{margin-top:4px;border:1px solid var(--line);background:none;border-radius:10px;padding:6px 10px;font-size:13px}
+.cmp-btn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.empty{grid-column:1/-1;text-align:center;padding:50px 16px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:16px}
+.empty button{margin-top:10px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:6px 14px}
+
+.more{margin-top:40px}
+.more-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.more-head h2{font-family:var(--serif);font-size:19px;margin:0}
+.more-head h2 small{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400}
+.more-head p{margin:2px 0 0;color:var(--muted);font-size:13px}
+.more-body{margin-top:14px}
+.more .seg{margin-bottom:12px}
+.grid.mini{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.card.mini .top{height:78px}
+.card.mini .top svg{width:52px;height:52px}
+.card.mini .body{padding:10px 12px 12px;gap:6px}
+.card.mini h3{font-size:15.5px}
+
+/* Shared bits */
+.secondary{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 16px}
+.primary{background:var(--ink);color:var(--bg);border:0;border-radius:12px;padding:10px 16px;font-weight:600}
+.primary[disabled]{opacity:.4;cursor:not-allowed}
+.note{border-radius:12px;padding:10px 14px;font-size:13.5px;background:var(--soft)}
+.note.warn{background:var(--warn-bg);color:var(--warn)}
+.gchips{display:flex;flex-wrap:wrap;gap:6px}
+.gchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:3px 10px 3px 4px;font-size:13px;text-decoration:none}
+.gchip:hover{border-color:var(--ink)}
+.gchip svg{width:20px;height:20px;flex:none}
+.gchip.dim{opacity:.7;border-style:dashed}
+.tchip{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:2px 10px;font-size:12.5px;text-decoration:none;background:var(--soft);border:1px solid var(--line)}
+.tchip:hover{border-color:var(--ink)}
+.tchip.dim{background:none;border-style:dashed;color:var(--muted)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+
+/* Encyclopedia */
+.enc-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 14px}
+.enc-tools input,.enc-tools select{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 10px;font-size:14px}
+.enc-tools input{flex:1;min-width:180px;max-width:320px}
+.tbl-wrap{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+table.enc{width:100%;border-collapse:collapse;font-size:13.5px}
+.enc th{font-size:12px;color:var(--muted);font-weight:500;text-align:left;padding:10px 12px;background:var(--soft);white-space:nowrap}
+.enc td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+.enc tbody tr{cursor:pointer}
+.enc tbody tr:hover td{background:var(--soft)}
+.enc .nm{display:flex;gap:10px;align-items:center;min-width:150px}
+.enc .nm svg{width:30px;height:30px;flex:none}
+.enc .nm b{font-family:var(--serif);font-size:15px;display:block;line-height:1.25}
+.enc .nm small{color:var(--muted);font-size:12px}
+.enc .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.enc .fx{color:var(--muted);font-size:12.5px;max-width:260px}
+
+/* Compare page */
+.cmp-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0}
+.cmp-tools select{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 10px;font-size:14px}
+.verdict{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:12px 16px;font-size:14px;margin-bottom:14px}
+.verdict > b{display:block;margin-bottom:4px}
+.verdict ul{margin:0;padding-left:18px}
+.ctable-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:16px}
+table.ct{border-collapse:separate;border-spacing:0;width:100%;min-width:620px;font-size:13.5px;table-layout:fixed}
+.ct col.lab{width:100px}
+.ct th,.ct td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.ct thead th{position:relative}
+.ct tbody th{color:var(--muted);font-weight:500;white-space:nowrap}
+.ct .gh{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.ct .gh svg{width:46px;height:46px}
+.ct .gh b{font-family:var(--serif);font-size:16px}
+.ct .gh small{color:var(--muted);font-weight:400}
+.ct .rm{position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:var(--card);font-size:12px}
+.ct td.best{background:var(--ok-bg)}
+.ct th.secrow{background:var(--soft);color:var(--ink);font-weight:600}
+.ct th.secrow span{position:sticky;left:10px}
+.ct .tchip{margin:0 4px 4px 0}
+
+/* Treatment guide */
+.otypes{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.otype{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;border-top:4px solid var(--line)}
+.otype.ok{border-top-color:var(--ok)} .otype.mid{border-top-color:var(--mid)} .otype.warn{border-top-color:var(--warn)}
+.otype b{font-size:16px;font-family:var(--serif)}
+.otype small{color:var(--muted);display:block;font-size:12px}
+.otype p{margin:8px 0 6px;font-size:14px}
+.otype .ex{font-size:12.5px;color:var(--muted)}
+table.mx{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
+.mx th{font-size:12px;color:var(--muted);font-weight:500;text-align:left;padding:10px 12px;background:var(--soft);white-space:nowrap}
+.mx td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:middle}
+.mx a{text-decoration:none;font-weight:600}
+.pips{display:inline-flex;gap:3px}
+.pips i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.pips.good i.on{background:var(--ok)} .pips.bad i.on{background:var(--warn)}
+.tcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;scroll-margin-top:80px}
+.tcard:target,.tcard.flash{outline:2px solid var(--accent);outline-offset:2px}
+.tcard h3{margin:0;font-family:var(--serif);font-size:19px;display:flex;align-items:center;gap:8px}
+.tcard h3 small{font-family:var(--sans);font-size:12px;color:var(--muted);font-weight:400}
+.tcard .badges{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}
+.tcard dl{margin:0;display:grid;grid-template-columns:62px 1fr;gap:6px 10px;font-size:13.5px}
+.tcard dt{color:var(--muted)}
+.tcard dd{margin:0}
+.tcard .on-gems{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+.tcard .on-gems .gchips{margin-top:6px}
+
+/* Buying guide */
+ol.bsteps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;counter-reset:s}
+ol.bsteps li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;counter-increment:s;font-size:14px}
+ol.bsteps li::before{content:counter(s);width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:600;font-size:13px;margin-bottom:8px}
+ol.bsteps b{display:block;margin-bottom:4px;font-size:15px}
+.usecol h3{margin:0 0 4px;font-size:16px;font-family:var(--serif)}
+.usecol p{margin:0 0 10px;font-size:13px;color:var(--muted)}
+table.sw{width:100%;border-collapse:collapse;font-size:14px;min-width:560px}
+.sw td,.sw th{padding:10px 12px;border-top:1px solid var(--line);vertical-align:middle;text-align:left}
+.sw th{font-size:12px;color:var(--muted);font-weight:500;background:var(--soft);border-top:0}
+ul.flags{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.flags li{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:8px 12px 8px 34px;position:relative;font-size:14px}
+ul.flags li::before{content:"!";position:absolute;left:10px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--warn);color:var(--bg);font-weight:700;font-size:11px;display:grid;place-items:center}
+.labs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.labs div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}
+.labs b{font-size:16px;font-family:var(--serif);display:block}
+.labs small{color:var(--muted)}
+.care{display:grid;gap:8px}
+.care div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px}
+.care b{display:block;font-size:13px;color:var(--accent)}
+.cta{margin-top:30px;text-align:center}
+
+/* Budget visualizer */
+.fun-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;padding:14px 18px;border-radius:16px;text-decoration:none;
+  background:linear-gradient(120deg,color-mix(in srgb,#e0b84f 22%,var(--card)),color-mix(in srgb,#c8102e 12%,var(--card)));border:1px solid var(--line)}
+.fun-banner b{font-family:var(--serif);font-size:17px}
+.fun-banner span{color:var(--muted);font-size:13px;display:block}
+.fun-banner em{font-style:normal;font-weight:600;color:var(--accent);white-space:nowrap}
+.cash-panel{display:grid;grid-template-columns:1fr 220px;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);margin-top:18px}
+.cash-amt{font-family:var(--serif);font-size:clamp(40px,7vw,64px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.cash-amt small{font-size:.45em;color:var(--muted);font-weight:400;margin-left:8px;font-family:var(--sans)}
+.cash-range{width:100%;margin:18px 0 12px;accent-color:var(--accent);height:28px}
+.cash-sub{font-size:12px;color:var(--muted);margin:12px 0 6px}
+.cdots{display:flex;flex-wrap:wrap;gap:6px}
+.cdots button{width:26px;height:26px;border-radius:50%;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line);padding:0}
+.cdots button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
+.cdots .all{width:auto;border-radius:999px;padding:0 10px;font-size:12px;background:var(--card)}
+.cash-right{display:flex;flex-direction:column;align-items:center;gap:10px}
+.stack{position:relative;width:120px;height:130px}
+.bill{position:absolute;left:18px;width:84px;height:38px;border-radius:4px;background:linear-gradient(135deg,#e2645a,#b8322a);border:1px solid #8f241e;
+  box-shadow:0 1px 2px rgba(0,0,0,.25);color:rgba(255,255,255,.9);font:700 13px/38px var(--sans);text-align:right;padding-right:8px;transition:transform .3s}
+.bill::before{content:"";position:absolute;left:9px;top:9px;width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.45)}
+.bill::after{content:"";position:absolute;left:32px;right:30px;top:17px;height:2px;background:rgba(255,255,255,.3)}
+.bill.fly{position:fixed;z-index:70;pointer-events:none;left:0;top:0}
+.stack-lbl{font-size:12.5px;color:var(--muted);text-align:center}
+.grid.bud{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px 14px;cursor:pointer;text-align:left;transition:transform .15s,box-shadow .15s}
+.bcard:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.bcard.pop{animation:pop .55s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{0%{transform:scale(.92)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+.bvis{position:relative;height:170px;display:grid;place-items:center;border-radius:12px;margin-bottom:10px;overflow:hidden}
+.coin{position:absolute;left:50%;top:50%;width:var(--coin,87px);height:var(--coin,87px);margin:calc(var(--coin,87px) / -2) 0 0 calc(var(--coin,87px) / -2);border-radius:50%;border:1.5px dashed color-mix(in srgb,var(--muted) 60%,transparent)}
+.bgem{position:relative;display:grid;place-items:center;transition:width .45s cubic-bezier(.3,1.3,.5,1),height .45s cubic-bezier(.3,1.3,.5,1)}
+.bgem svg{width:100%;height:100%;filter:drop-shadow(0 4px 6px rgba(0,0,0,.2))}
+.bigger{position:absolute;right:8px;top:8px;font-size:11px;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:1px 8px}
+.bcard h3{margin:0;font-family:var(--serif);font-size:17px}
+.bcard .ctv{font-family:var(--serif);font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.2;margin-top:2px}
+.bcard .ctv small{font-family:var(--sans);font-size:13px;font-weight:400;color:var(--muted);margin-left:4px}
+.bcard .sub{font-size:12px;color:var(--muted)}
+.bcard.tiny .ctv{color:var(--muted);font-size:18px}
+.bud-legend{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.bud-legend i{width:18px;height:18px;border-radius:50%;border:1.5px dashed var(--muted);display:inline-block}
+
+/* Play */
+.play-tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+.play-tabs button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;font-family:var(--serif);font-size:18px;font-weight:700}
+.play-tabs button small{font-family:var(--sans);font-size:12.5px;font-weight:400;color:var(--muted)}
+.play-tabs button[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.play-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.pbar{height:6px;border-radius:999px;background:var(--soft);overflow:hidden;margin-bottom:18px}
+.pbar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .35s}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.qtitle{font-family:var(--serif);font-size:clamp(22px,3.4vw,30px);margin:0 0 18px;line-height:1.3}
+.qopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.qopt{display:flex;align-items:center;gap:12px;text-align:left;background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px;transition:transform .12s,border-color .12s}
+.qopt:hover{border-color:var(--ink);transform:translateY(-1px)}
+.qopt .ic{font-size:26px;line-height:1}
+.qopt small{display:block;color:var(--muted);font-size:12.5px}
+.qopt.right{border-color:var(--ok);background:var(--ok-bg)}
+.qopt.wrong{border-color:var(--warn);background:var(--warn-bg);animation:shake .35s}
+.qopt[disabled]{cursor:default;transform:none}
+@keyframes shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.qcolors{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-bottom:12px}
+.qcolors button{aspect-ratio:1;border-radius:50%;border:3px solid var(--card);box-shadow:0 0 0 1px var(--line),inset 0 -6px 10px rgba(0,0,0,.18),inset 0 4px 8px rgba(255,255,255,.35);position:relative}
+.qcolors button span{position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);font-size:12px;white-space:nowrap;color:var(--ink)}
+.qcolors{margin-bottom:34px;row-gap:30px}
+.qnav{display:flex;justify-content:space-between;margin-top:18px}
+.slide-in{animation:slidein .35s ease}
+@keyframes slidein{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.reveal{text-align:center}
+.reveal .eyebrow{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:600;text-transform:uppercase}
+.hero-gem{width:150px;height:150px;margin:10px auto 0;animation:heroin .9s cubic-bezier(.3,1.5,.5,1)}
+.hero-gem svg{width:100%;height:100%;filter:drop-shadow(0 12px 18px rgba(0,0,0,.25))}
+@keyframes heroin{0%{transform:scale(.2) rotate(-40deg);opacity:0}100%{transform:none;opacity:1}}
+.reveal h2{font-family:var(--serif);font-size:34px;margin:8px 0 0}
+.reveal .pct{display:inline-block;margin-top:6px;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:2px 12px;font-size:13px;font-weight:600}
+.reveal ul{list-style:none;padding:0;margin:14px auto 0;max-width:420px;text-align:left;font-size:14px}
+.reveal ul li{padding:4px 0 4px 24px;position:relative}
+.reveal ul li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+.runners{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px auto 0;max-width:520px}
+.runner{display:flex;gap:10px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-align:left}
+.runner svg{width:44px;height:44px;flex:none}
+.runner b{font-family:var(--serif);font-size:16px;display:block}
+.runner small{color:var(--muted)}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+.spark{position:fixed;z-index:80;pointer-events:none;font-size:16px;color:#f5c542;text-shadow:0 0 6px rgba(245,197,66,.8)}
+.clues{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.clue{background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:14px;text-align:left;font-size:13.5px;transition:border-color .12s,transform .12s}
+.clue:hover{border-color:var(--ink)}
+.clue .lt{font-family:var(--serif);font-size:22px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.clue dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:8px 0 0}
+.clue dt{color:var(--muted)}
+.clue dd{margin:0;font-variant-numeric:tabular-nums}
+.clue .who{display:none;margin-top:8px;font-weight:600}
+.clue.shown .who{display:flex;align-items:center;gap:6px}
+.clue .who svg{width:22px;height:22px}
+.clue.right{border-color:var(--ok);background:var(--ok-bg)}
+.clue.wrong{border-color:var(--warn);background:var(--warn-bg);animation:shake .35s}
+.explain{margin-top:16px;border-radius:12px;padding:12px 16px;font-size:14px;background:var(--soft);animation:slidein .3s ease}
+.explain b{display:block;margin-bottom:2px}
+.score-big{font-family:var(--serif);font-size:64px;font-weight:700;line-height:1;margin-top:8px}
+.score-big small{font-size:24px;color:var(--muted)}
+
+/* Card sparkle on hover */
+.card .top::before,.card .top::after{content:"✦";position:absolute;color:#fff;opacity:0;pointer-events:none;text-shadow:0 0 6px #fff}
+.card .top::before{left:58%;top:22%;font-size:14px}
+.card .top::after{left:36%;top:58%;font-size:10px}
+.card:hover .top::before{animation:twinkle .9s ease .05s}
+.card:hover .top::after{animation:twinkle .9s ease .3s}
+@keyframes twinkle{0%{opacity:0;transform:scale(.3) rotate(0)}40%{opacity:1;transform:scale(1.2) rotate(45deg)}100%{opacity:0;transform:scale(.4) rotate(90deg)}}
+
+footer{color:var(--muted);font-size:12.5px;padding:40px 0 120px;border-top:1px solid var(--line);margin-top:48px}
+
+/* Drawer */
+.overlay{position:fixed;inset:0;background:rgba(10,8,5,.45);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+.overlay.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(540px,100%);background:var(--bg);z-index:50;transform:translateX(100%);transition:transform .25s ease;overflow-y:auto;box-shadow:-10px 0 30px rgba(0,0,0,.15)}
+.drawer.show{transform:none}
+.drawer .dhead{position:relative;padding:28px 20px 20px;display:flex;gap:16px;align-items:center}
+.drawer .dhead svg{width:96px;height:96px;flex:none;filter:drop-shadow(0 8px 10px rgba(0,0,0,.2))}
+.drawer h2{font-family:var(--serif);font-size:26px;margin:0;line-height:1.2}
+.drawer h2 small{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;margin-top:4px}
+.close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--card);font-size:18px;line-height:1}
+.dbody{padding:0 20px 100px;display:flex;flex-direction:column;gap:14px}
+.dsec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.dsec h4{margin:0 0 8px;font-size:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dsec h4 .k{font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.dsec p{margin:0;font-size:14px}
+.dsec ul{margin:0;padding-left:18px;font-size:14px}
+.dsec li+li{margin-top:3px}
+.dsec .sub{font-size:12px;color:var(--muted);margin:10px 0 6px}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pc ul{padding-left:0;list-style:none}
+.pc li{padding-left:20px;position:relative}
+.pc .p li::before{content:"＋";position:absolute;left:0;color:var(--ok);font-weight:700}
+.pc .c li::before{content:"－";position:absolute;left:0;color:var(--warn);font-weight:700}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.facts div{background:var(--soft);border-radius:10px;padding:8px 10px}
+.facts span{display:block;font-size:11px;color:var(--muted)}
+.facts b{font-size:14px}
+.phys{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:13.5px}
+.phys dt{color:var(--muted)}
+.phys dd{margin:0;font-variant-numeric:tabular-nums}
+.ask li{list-style:"？ "}
+.alts{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.alt{display:flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:6px 8px;background:var(--bg);text-align:left;font-size:13px}
+.alt svg{width:30px;height:30px;flex:none}
+.alt small{display:block;color:var(--muted);font-size:11px}
+.dfoot{position:sticky;bottom:0;padding:12px 20px;background:linear-gradient(transparent,var(--bg) 30%);display:flex;gap:8px}
+.dfoot .primary{flex:1}
+
+/* Compare tray */
+.tray{position:fixed;left:50%;bottom:16px;transform:translate(-50%,150%);transition:transform .25s;z-index:30;background:var(--ink);color:var(--bg);border-radius:16px;padding:8px 8px 8px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:calc(100% - 32px)}
+.tray.show{transform:translate(-50%,0)}
+.tray .items{display:flex;gap:6px;overflow-x:auto}
+.tray .it{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border-radius:999px;padding:3px 4px;font-size:13px;white-space:nowrap}
+.tray .it svg{width:20px;height:20px}
+.tray .it button{background:none;border:0;color:inherit;opacity:.6;padding:0 4px}
+.tray .go{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:8px 14px;font-weight:600;white-space:nowrap}
+.tray .go[disabled]{opacity:.5;cursor:not-allowed}
+
+@media (max-width:640px){
+  .topbar .wrap{flex-wrap:wrap;gap:0;padding-top:8px}
+  .logo small{font-size:9px;letter-spacing:.08em}
+  .logo{flex:1}
+  .langsw{order:2}
+  nav.main{order:3}
+  nav.main{width:100%;margin:6px -16px 0;padding:0 16px 8px}
+  nav.main a small{display:none}
+  header.hero,.page-head{padding-top:22px}
+  .panel{padding:16px;border-radius:16px}
+  .colors{grid-template-columns:repeat(7,minmax(0,1fr));gap:2px}
+  .chip{padding:8px 0 6px}
+  .chip .dot{width:34px;height:34px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .card .top{height:96px}
+  .card .top svg{width:64px;height:64px}
+  .card .body{padding:10px 10px 12px}
+  .card h3{font-size:16px}
+  .card .line{display:none}
+  .meta{grid-template-columns:1fr;gap:2px}
+  .meta dt{display:none}
+  .meta .tl{display:block;margin:2px 0 0}
+  .bar i{width:10px}
+  .tools{width:100%}
+  .tools input{flex:1}
+  .drawer{top:auto;height:92vh;width:100%;border-radius:18px 18px 0 0;transform:translateY(100%)}
+  .drawer.show{transform:none}
+  .pc{grid-template-columns:1fr}
+  .tcards{grid-template-columns:1fr}
+  .cash-panel{grid-template-columns:1fr;padding:16px;gap:12px}
+  .cash-right{flex-direction:row;justify-content:space-between}
+  .stack{width:110px;height:100px}
+  .grid.bud{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bvis{height:130px}
+  .bcard{padding:10px}
+  .bcard .ctv{font-size:21px}
+  .fun-banner em{display:none}
+  .play-tabs button{font-size:15px;padding:12px}
+  .play-card{padding:18px 16px}
+  .qcolors button span{font-size:11px}
+  .runners{grid-template-columns:1fr}
+  /* 百科表格在手机上变成卡片 */
+  table.enc thead{display:none}
+  table.enc,table.enc tbody,table.enc tr,table.enc td{display:block;width:100%}
+  table.enc tr{border-top:1px solid var(--line);padding:10px 12px}
+  table.enc td{border:0;padding:2px 0}
+  table.enc td[data-l]::before{content:attr(data-l)"：";color:var(--muted);font-size:12px}
+  table.enc td .dots{display:inline-flex;vertical-align:middle}
+  .enc .fx{max-width:none}
+  /* 一览表、替代表、名称表在手机上也变成卡片 */
+  table.stack{min-width:0}
+  table.stack thead{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
+  table.stack tr{border-top:1px solid var(--line);padding:10px 12px}
+  table.stack tr:first-child{border-top:0}
+  table.stack td{border:0;padding:3px 0}
+  table.stack td[data-l]::before{content:attr(data-l)"：";color:var(--muted);font-size:12px;margin-right:2px}
+  table.stack td .gchips{display:inline-flex}
+  table.mx.stack td[data-l]:not(:last-child){display:inline-block;width:auto;margin-right:12px}
+  /* 对比表：固定左侧标签列 */
+  .ct col.lab{width:76px}
+  .ct th,.ct td{padding:9px 10px}
+  .ct tbody th:not(.secrow),.ct thead th:first-child{position:sticky;left:0;z-index:1;background:var(--card);box-shadow:1px 0 0 var(--line)}
+  table.ct{min-width:520px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#explore"><b>GEM <span>GUIDE</span></b><small>Discover · Learn · Compare · Choose</small></a>
+    <nav class="main" aria-label="Main">
+      <a href="#explore" data-nav="explore"><span data-en="Explore">探索</span></a>
+      <a href="#encyclopedia" data-nav="encyclopedia"><span data-en="Encyclopedia">百科</span></a>
+      <a href="#budget" data-nav="budget"><span data-en="💰 Budget">💰 预算换算</span></a>
+      <a href="#play" data-nav="play"><span data-en="🎮 Play">🎮 玩一玩</span></a>
+      <a href="#compare" data-nav="compare"><span data-en="Compare">对比</span><span class="cnt" id="nav-cnt" hidden></span></a>
+      <a href="#treatments" data-nav="treatments"><span data-en="Treatments">处理指南</span></a>
+      <a href="#buying" data-nav="buying"><span data-en="Buying guide">购买指南</span></a>
+    </nav>
+    <div class="langsw" role="group" aria-label="语言 / Language">
+      <button data-lang="zh" lang="zh-CN">中文</button><button data-lang="en" lang="en">EN</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ============ 探索 ============ -->
+  <section class="page" data-page="explore">
+    <header class="hero">
+      <h1 class="big" data-en="&lt;em&gt;Learn&lt;/em&gt; before you buy.&lt;br&gt;Find the gem that suits you."><em>Learn</em> before you buy.<br>先了解，再购买。</h1>
+      <p class="lede" data-en="Find gems by colour, variety, cut, treatment and budget. Open any gem to learn its traits and risks, then compare side by side to choose the one that suits you.">按颜色、品种、切工、处理方式和预算找到感兴趣的宝石；点开了解特征和风险，再放进对比，选出最适合你的那一颗。</p>
+      <ol class="steps">
+        <li><a href="#explore"><span class="n">1</span><span data-en="Discover &lt;small&gt;colour &amp; filters&lt;/small&gt;">Discover 发现 <small>选颜色和条件</small></span></a></li>
+        <li><a href="#encyclopedia"><span class="n">2</span><span data-en="Learn &lt;small&gt;encyclopedia &amp; treatments&lt;/small&gt;">Learn 了解 <small>宝石百科与处理</small></span></a></li>
+        <li><a href="#compare"><span class="n">3</span><span data-en="Compare &lt;small&gt;up to 3 side by side&lt;/small&gt;">Compare 对比 <small>最多 3 颗并排</small></span></a></li>
+        <li><a href="#buying"><span class="n">4</span><span data-en="Choose &lt;small&gt;buying guide&lt;/small&gt;">Choose 选择 <small>购买指南</small></span></a></li>
+      </ol>
+      <a class="fun-banner" href="#budget">
+        <div data-en="&lt;b&gt;💰 How big a gem can my money buy?&lt;/b&gt;&lt;span&gt;Enter a budget and see how big a ruby, a spinel or an amethyst it gets you&lt;/span&gt;"><b>💰 我的钱能买多大的宝石？</b><span>输入预算，看同样的钱在红宝石、尖晶石、紫晶上分别能换到多大</span></div>
+        <em data-en="Try it →">去试试 →</em>
+      </a>
+      <details class="primer">
+        <summary data-en="New to gems? 4 things to know before you buy">新手必读：买宝石前先懂这 4 件事</summary>
+        <div class="primer-grid">
+          <div data-en="&lt;b&gt;Hardness ≠ durability&lt;/b&gt;Hardness is scratch resistance. Some hard gems are brittle (emerald) or have cleavage (topaz). Our durability score combines both.">
+            <b>硬度 ≠ 耐久</b>硬度是抗刮能力；有些宝石虽硬但脆（如祖母绿），或有解理容易裂（如托帕石）。本站的“耐久度”综合了这两点。</div>
+          <div data-en="&lt;b&gt;Treated isn’t fake&lt;/b&gt;Heated sapphire and oiled emerald are industry norms. What matters is honest disclosure – and treatment affects price. &lt;a href=&quot;#treatments&quot;&gt;Treatment guide →&lt;/a&gt;">
+            <b>处理不等于假</b>加热蓝宝石、注油祖母绿都是行业常规。关键是卖家要如实告知，而且处理方式会影响价格。<a href="#treatments">看处理指南 →</a></div>
+          <div data-en="&lt;b&gt;Expensive gems need a report&lt;/b&gt;Reports from labs such as GIA, GRS, SSEF or NGTC confirm identity and treatment, and sometimes origin.">
+            <b>贵的宝石要看证书</b>GIA、GRS、SSEF、NGTC（国检）等实验室证书能确认真伪、是否处理，有的还会写产地。</div>
+          <div data-en="&lt;b&gt;Prices are a guide only&lt;/b&gt;The same gem can vary tens of times in price with quality, size and origin. Our prices compare varieties – they are not quotes.">
+            <b>价格只是参考</b>同一种宝石，品质、大小、产地不同，价格可以差几十倍。本站的价格用于比较不同品种，不是报价。</div>
+        </div>
+      </details>
+    </header>
+
+    <section class="panel" aria-labelledby="discover-h">
+      <h2 id="discover-h" data-en="What colour are you looking for?">你想要什么颜色？</h2>
+      <p class="hint" data-en="Pick several if you like, e.g. both “Blue” and “Violet”. Pick none to see everything.">可以多选，例如同时选“蓝”和“蓝紫”。不选则显示全部。</p>
+      <div class="colors" id="colors"></div>
+
+      <div class="filters">
+        <div class="fgroup"><label class="t" data-en="Budget cap (reference price per carat)">预算上限（每克拉参考价）</label><div class="seg" id="f-budget"></div></div>
+        <div class="fgroup"><label class="t" data-en="How you’ll wear it">佩戴方式</label><div class="seg" id="f-use"></div></div>
+        <div class="fgroup"><label class="t" data-en="Cut">切工</label><div class="seg" id="f-cut"></div></div>
+        <div class="fgroup"><label class="t" data-en="Variety / origin">品种 / 来源</label>
+          <div class="seg"><select class="fselect" id="f-family" aria-label="Variety"></select><span id="f-origin" class="seg"></span></div></div>
+        <div class="fgroup wide"><label class="t"><span data-en="Treatments I can accept">能接受的处理程度</span><a href="#treatments" data-en="What are these? →">这些处理是什么？→</a></label><div class="seg" id="f-treat"></div></div>
+        <div class="fgroup wide"><label class="t"><span data-en="Treatments I want to avoid (hides gems where they are common or possible – pick several)">我不想要的处理（隐藏常见或可能遇到这种处理的宝石，可多选）</span></label><div class="seg x" id="f-exclude"></div></div>
+      </div>
+      <div class="ftools"><span id="f-summary"></span><button class="linkbtn" id="reset-filters" data-en="Reset all filters">重置全部条件</button></div>
+    </section>
+
+    <div class="resbar">
+      <h2><span data-en="Gems you can choose">可以选择的宝石</span> <small id="count"></small></h2>
+      <div class="tools">
+        <input id="q" type="search" placeholder="搜索名称，如 尖晶石 / spinel" data-en-ph="Search, e.g. spinel / 尖晶石" aria-label="Search">
+        <select id="sort" aria-label="Sort">
+          <option value="value" data-en="Best value">按性价比</option>
+          <option value="price" data-en="Price: low to high">价格从低到高</option>
+          <option value="price-d" data-en="Price: high to low">价格从高到低</option>
+          <option value="dur" data-en="Most durable first">最耐戴优先</option>
+          <option value="treat" data-en="Least treated first">处理最少优先</option>
+        </select>
+      </div>
+    </div>
+    <div class="active-colors" id="active"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+
+    <section class="more" aria-labelledby="more-h">
+      <div class="more-head">
+        <div>
+          <h2 id="more-h"><span data-en="More gems · from the GIA charts">更多宝石 · 来自 GIA 图表</span> <small id="more-count"></small></h2>
+          <p data-en="Collector gems, organic gems, and the synthetics and imitations to watch out for. Basic properties only – no prices or buying advice yet.">收藏冷门宝石、有机宝石，以及需要提防的合成品和仿制品。只有基础物性，暂无价格和选购建议。</p>
+        </div>
+        <button class="secondary" id="more-toggle" aria-expanded="false" aria-controls="more-body"></button>
+      </div>
+      <div class="more-body" id="more-body" hidden>
+        <div class="seg" id="more-tabs"></div>
+        <div class="grid mini" id="more-grid"></div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ 百科 ============ -->
+  <section class="page" data-page="encyclopedia" hidden>
+    <div class="page-head">
+      <div class="eyebrow">Gemstone Encyclopedia</div>
+      <h1 data-en="Gem encyclopedia">宝石百科</h1>
+      <p data-en="Facts, physical properties, optical effects and identifying features for every gem, from the GIA Gem Property Charts. Tap any row for details.">全部宝石的资料、物理性质、光学效应和鉴定特征。数据来自 GIA 宝石性质图表，点任意一行查看详情。</p>
+    </div>
+    <div class="enc-tools">
+      <input id="enc-q" type="search" placeholder="搜索中文或英文名" data-en-ph="Search English or Chinese name" aria-label="Search">
+      <div class="seg" id="enc-group"></div>
+      <select id="enc-sort" aria-label="Sort">
+        <option value="name" data-en="By name">按名称</option>
+        <option value="hard" data-en="Hardness: high to low">硬度从高到低</option>
+        <option value="ri" data-en="RI: high to low">折射率从高到低</option>
+        <option value="sg" data-en="SG: high to low">比重从高到低</option>
+      </select>
+    </div>
+    <div class="tbl-wrap"><table class="enc">
+      <thead><tr>
+        <th data-en="Gem">宝石</th><th data-en="Type">类别</th><th data-en="Colours">颜色</th><th data-en="Hardness">硬度</th>
+        <th data-en="RI">折射率 RI</th><th data-en="SG">比重 SG</th><th data-en="Optic / system">光性 / 晶系</th><th data-en="Effects &amp; features">光学效应与特征</th>
+      </tr></thead>
+      <tbody id="enc-body"></tbody>
+    </table></div>
+  </section>
+
+  <!-- ============ 预算换算 ============ -->
+  <section class="page" data-page="budget" hidden>
+    <div class="page-head">
+      <div class="eyebrow">Budget Visualizer</div>
+      <h1 data-en="💰 How big a gem can my money buy?">💰 我的钱能买多大的宝石？</h1>
+      <p data-en="Drag the budget to see how big a gem the same money buys in each variety. Gems are drawn to scale; the dashed circle is a US quarter (24 mm).">拖动预算，看看同样的钱在不同宝石上能换到多大。宝石按真实比例显示，虚线圆是一枚一元硬币（直径 25 mm）。</p>
+    </div>
+    <div class="cash-panel">
+      <div>
+        <div class="cash-amt" id="cash-amt">0</div>
+        <input class="cash-range" type="range" id="cash-range" min="0" max="1000" step="1" aria-label="Budget">
+        <div class="seg" id="cash-quick"></div>
+        <div class="cash-sub" data-en="Only show a colour">只看某种颜色</div>
+        <div class="cdots" id="cash-colors"></div>
+      </div>
+      <div class="cash-right">
+        <div class="stack" id="cash-stack" aria-hidden="true"></div>
+        <div>
+          <div class="stack-lbl" id="stack-lbl"></div>
+          <button class="primary" id="cash-go" style="margin-top:8px;width:100%" data-en="Turn into gems ✨">换成宝石 ✨</button>
+        </div>
+      </div>
+    </div>
+    <div class="resbar">
+      <h2><span data-en="This buys you">这笔钱能买到</span> <small id="bud-note"></small></h2>
+      <div class="tools">
+        <span class="bud-legend"><i></i><span data-en="US quarter 24 mm">一元硬币 25 mm</span></span>
+        <select id="bud-sort" aria-label="Sort">
+          <option value="size" data-en="Biggest first">买到最大的在前</option>
+          <option value="price" data-en="Highest price per carat first">每克拉最贵的在前</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid bud" id="bud-grid"></div>
+    <div class="note" style="margin-top:16px" data-en="&lt;b&gt;How it’s calculated:&lt;/b&gt; carats come from a reference price per carat for ~1 ct commercial-quality stones (the midpoint of the range, in US dollars). Above 1 ct, bigger stones cost more per carat, and the estimate allows for that. Diameter assumes a round brilliant cut and the gem’s specific gravity. Results compare varieties – they are not quotes. Jadeite, nephrite, turquoise and pearls are priced per piece and are not included.">
+      <b>怎么算的：</b>按约 1 克拉商业级品质的每克拉参考价（取价格区间的中间值，汇率 1 美元 ≈ <span class="usd-cny"></span> 元）换算克拉数；大于 1 克拉时，越大的宝石每克拉越贵，已按此调小。直径按圆形明亮式切工和宝石比重估算。结果只用于比较不同品种，不是报价。翡翠、和田玉、绿松石、珍珠按件计价，不参与换算。
+    </div>
+  </section>
+
+  <!-- ============ 玩一玩 ============ -->
+  <section class="page" data-page="play" hidden>
+    <div class="page-head">
+      <div class="eyebrow">Play &amp; Learn</div>
+      <h1 data-en="🎮 Play">🎮 玩一玩</h1>
+      <p data-en="Learn while you play: answer 5 questions to find your gem, or take the “Gem Detective” challenge – can you spot the real gem and dodge the name traps?">边玩边学：用 5 个问题找到适合你的宝石，或者挑战“火眼金睛”，看你能不能认出真宝石、躲开名称陷阱。</p>
+    </div>
+    <div class="play-tabs">
+      <button data-mode="quiz" data-en="🔮 Find your gem&lt;small&gt;Answer 5 questions to reveal your gem&lt;/small&gt;">🔮 5 题选宝石<small>回答 5 个问题，揭晓你的本命宝石</small></button>
+      <button data-mode="game" data-en="🕵️ Gem Detective&lt;small&gt;8 questions to test your eye&lt;/small&gt;">🕵️ 火眼金睛<small>8 道题，测测你的鉴别力</small></button>
+    </div>
+    <div id="play-body"></div>
+  </section>
+
+  <!-- ============ 对比 ============ -->
+  <section class="page" data-page="compare" hidden>
+    <div class="page-head">
+      <div class="eyebrow">Compare Gemstones</div>
+      <h1 data-en="Compare gems">宝石对比</h1>
+      <p data-en="Pick up to 3 gems and compare price, durability, treatments and gemmological data side by side.">最多选择 3 种宝石，并排比较价格、耐久度、处理方式和专业参数。</p>
+    </div>
+    <div class="cmp-tools">
+      <select id="cmp-add" aria-label="Add a gem"></select>
+      <button class="secondary" id="cmp-clear" data-en="Clear">清空</button>
+    </div>
+    <div id="cmp-body"></div>
+  </section>
+
+  <!-- ============ 处理指南 ============ -->
+  <section class="page" data-page="treatments" hidden>
+    <div class="page-head">
+      <div class="eyebrow">Treatment Guide</div>
+      <h1 data-en="Treatment guide: natural, treated, synthetic and imitation">处理指南：天然、处理、合成与仿制</h1>
+      <p data-en="Most coloured gems are treated in some way. Treated doesn’t mean fake – what matters is knowing what was done, whether it lasts, how it affects price, and whether the seller told you.">大多数彩色宝石都经过某种处理。处理本身不等于假，关键是知道它是什么、稳不稳定、对价格有多大影响，以及卖家有没有如实告知。</p>
+    </div>
+    <h2 class="sec" data-en="Six “identities” a gem can have">一颗宝石的六种“身份”</h2>
+    <div class="otypes" id="otypes"></div>
+    <div class="note" style="margin-top:14px" data-en="China’s national standard GB/T 16552 splits improvements into two groups: &lt;b&gt;enhancements&lt;/b&gt; (traditional and widely accepted, such as heating and waxing – the plain gem name may be used) and &lt;b&gt;treatments&lt;/b&gt; (non-traditional and not yet accepted, such as filling, dyeing and diffusion – they must be named on the label or report).">中国国家标准 GB/T 16552 把改善方法分为两类：<b>优化</b>（传统、被广泛接受，如加热、浸蜡，可直接用宝石名称）和<b>处理</b>（非传统、尚不被接受，如充填、染色、扩散，必须在名称或证书上注明“处理”）。</div>
+    <h2 class="sec"><span data-en="13 common treatments at a glance">13 种常见处理方式一览</span> <small data-en="tap a name for details">点名称查看详细说明</small></h2>
+    <div class="tbl-wrap" style="overflow-x:auto"><table class="mx stack" id="tmatrix"></table></div>
+    <h2 class="sec" data-en="One by one">逐一了解</h2>
+    <div class="tcards" id="tcards"></div>
+    <h2 class="sec"><span data-en="Synthetics and imitations">合成品与仿制品清单</span> <small data-en="know them so they can’t be sold to you as natural">了解它们，避免被当作天然宝石卖给你</small></h2>
+    <div class="box"><div class="gchips" id="synth-list"></div></div>
+  </section>
+
+  <!-- ============ 购买指南 ============ -->
+  <section class="page" data-page="buying" hidden>
+    <div class="page-head">
+      <div class="eyebrow">Buying Guide</div>
+      <h1 data-en="Buying guide">购买指南</h1>
+      <p data-en="What to watch for, value alternatives, choosing by use, and warning signs. Learn before you buy.">购买注意事项、性价比选择、适合的用途和风险提示。先了解，再购买。</p>
+    </div>
+    <h2 class="sec" data-en="5 steps to buying a gem">买宝石的 5 个步骤</h2>
+    <ol class="bsteps" id="bsteps"></ol>
+    <h2 class="sec" data-en="Choose by how you’ll wear it">按用途选宝石</h2>
+    <div class="cols" id="byuse"></div>
+    <h2 class="sec"><span data-en="Value alternatives">性价比替代</span> <small data-en="love a gem but it’s over budget?">喜欢某种宝石但预算不够？</small></h2>
+    <div class="tbl-wrap" style="overflow-x:auto"><table class="sw stack" id="swaps"></table></div>
+    <h2 class="sec" data-en="⚠ Warning signs">⚠ 警惕这些信号</h2>
+    <ul class="flags" id="flags"></ul>
+    <h2 class="sec"><span data-en="Name traps">名称陷阱</span> <small data-en="trade name ≠ what it really is">商业名称 ≠ 真实身份</small></h2>
+    <div class="tbl-wrap" style="overflow-x:auto"><table class="sw stack" id="traps"></table></div>
+    <h2 class="sec" data-en="Labs to trust">认准这些证书机构</h2>
+    <div class="labs" id="labs"></div>
+    <h2 class="sec" data-en="Care by durability">按耐久度保养</h2>
+    <div class="care" id="care"></div>
+    <div class="cta"><a class="primary" href="#explore" style="text-decoration:none;display:inline-block" data-en="Start choosing gems →">开始挑选宝石 →</a></div>
+  </section>
+
+  <footer data-en="Colours, hardness, physical properties and the 103 original records in “More gems” come from the GIA Gem Property Charts A/B (© 1992 GIA) as transcribed in jewelry-index. Prices, treatments, pros and cons and buying advice are editorial references for comparing varieties – not quotes or identification results. For important purchases, rely on a reputable lab report.">
+    颜色、硬度、物理性质及“更多宝石”区的 103 条原始记录来自 jewelry-index 中转录的 GIA Gem Property Chart A/B（© 1992 GIA）；价格、处理、优缺点和选购建议为编辑参考，仅用于比较不同品种，不构成报价或鉴定结论。重要购买请以权威实验室证书为准。
+  </footer>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title"></aside>
+
+<div class="tray" id="tray" aria-live="polite">
+  <div class="items" id="tray-items"></div>
+  <button class="go" id="tray-go"></button>
+</div>
+
+<script src="gems-data.js"></script>
+<script src="gems-data-en.js"></script>
+<script src="gems-gia.js"></script>
+<script src="guides-data.js"></script>
+<script src="guides-data-en.js"></script>
+<script>
+(function(){
+'use strict';
+
+const $ = s => document.querySelector(s);
+const COLOR = Object.fromEntries(COLORS.map(c => [c.k, c]));
+const GEM = Object.fromEntries(GEMS.map(g => [g.id, g]));
+const MAX_CMP = 3;
+const PAGES = ['explore', 'encyclopedia', 'budget', 'play', 'compare', 'treatments', 'buying'];
+const FAMILIES = [...new Set(GEMS.map(g => g.family))];
+
+/* ================= 语言 ================= */
+let LANG = 'zh';
+try { LANG = localStorage.getItem('gg-lang') === 'en' ? 'en' : 'zh'; } catch (e) {}
+const EN = () => LANG === 'en';
+const L = (zh, en) => LANG === 'en' ? en : zh;          // 行内中英文
+const SEP = () => L('、', ', ');
+const LOCALE = () => L('zh-CN', 'en-US');
+const cnt = n => L(`${n} 种`, `${n}`);
+
+// 宝石文字：英文模式优先用 gems-data-en.js，缺失时回落到中文
+const gName = g => EN() ? g.en : g.zh;
+const gAlt = g => EN() ? g.zh : g.en;
+const gf = (g, f) => EN() && GEMS_EN[g.id] && GEMS_EN[g.id][f] != null ? GEMS_EN[g.id][f] : g[f];
+const famName = f => EN() ? (FAMILY_EN[f] || f) : f;
+const colName = k => EN() ? COLOR[k].en : COLOR[k].zh;
+const tierName = p => EN() ? PRICE_TIERS_EN[p] : PRICE_TIERS[p].zh;
+const tlName = t => EN() ? TREAT_LEVELS_EN[t] : TREAT_LEVELS[t].zh;
+const trName = k => EN() ? TREATMENTS[k].en : TREATMENTS[k].zh;
+const trf = (k, f) => EN() ? TREATMENTS_EN[k][f] : TREATMENTS[k][f];
+const cutName = c => EN() ? CUTS[c].en : CUTS[c].zh;
+// GIA 记录：英文字段存放在 en_ 里
+const xName = r => EN() ? r.en : (r.zh || r.en);
+const xAlt = r => EN() ? (r.zh || '') : r.en;
+const xf = (r, f) => EN() && r.en_ && r.en_[f] != null ? r.en_[f] : r[f];
+
+function applyStatic(){
+  document.documentElement.lang = L('zh-CN', 'en');
+  document.title = L('Gem Guide 宝石选购指南', 'Gem Guide · Learn before you buy');
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (el.dataset.zh == null) el.dataset.zh = el.innerHTML;
+    el.innerHTML = EN() ? el.dataset.en : el.dataset.zh;
+  });
+  document.querySelectorAll('[data-en-ph]').forEach(el => {
+    if (el.dataset.zhPh == null) el.dataset.zhPh = el.placeholder;
+    el.placeholder = EN() ? el.dataset.enPh : el.dataset.zhPh;
+  });
+  document.querySelectorAll('.usd-cny').forEach(el => el.textContent = USD_CNY);
+  document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === LANG));
+}
+
+const DEFAULTS = { budget: 4, use: 'any', cut: 'any', family: 'all', treat: 2, origin: 'all' };
+const state = {
+  ...DEFAULTS,
+  colors: new Set(),
+  exclude: new Set(),
+  q: '',
+  sort: 'value',
+  compare: [],
+  open: null, openX: null,
+  moreOpen: false,
+  moreGroup: 'all',
+  page: 'explore',
+  encQ: '', encGroup: 'all', encSort: 'name',
+  cash: null, budColors: new Set(), budSort: 'size',
+  playMode: 'quiz', quiz: { step: 0, ans: {} }, game: null
+};
+
+/* ---------- GIA 记录 ---------- */
+const EXTRA = GIA_ROWS.filter(r => r.group !== 'covered');
+const XROW = Object.fromEntries(EXTRA.map(r => [r.id, r]));
+const ROW_ALL = Object.fromEntries(GIA_ROWS.map(r => [r.id, r]));
+const GIA_BY_GEM = {};
+for (const r of GIA_ROWS) for (const id of (r.gems || [])) (GIA_BY_GEM[id] = GIA_BY_GEM[id] || []).push(r);
+GIA_BY_GEM['lab-diamond'] = GIA_BY_GEM['diamond'];
+const MANUAL_PHYS = { moissanite: { ri: '2.648–2.691', sg: '3.22 ± 0.02', biref: '.043', optic: '双折射', system: '六方晶系', trans: '透明',
+  en_: { optic: 'Doubly refractive', system: 'Hexagonal', trans: 'Transparent' } } };
+const physOf = g => MANUAL_PHYS[g.id] || (GIA_BY_GEM[g.id] || [])[0] || {};
+
+const GROUPS = {
+  collector: { zh: '收藏冷门', en: 'Collector', tone: 'na', tagZh: '选购信息暂缺', tagEn: 'No buying info yet',
+    noteZh: '收藏级或冷门宝石，市场上少见。暂无价格和选购建议，以下是 GIA 图表的原始资料。',
+    noteEn: 'A collector or uncommon gem, rarely seen on the market. No price or buying advice yet – below is the original GIA chart data.' },
+  organic: { zh: '有机宝石', en: 'Organic', tone: 'mid', tagZh: '有机宝石', tagEn: 'Organic gem',
+    noteZh: '有机宝石来自生物，硬度低，怕酸、怕热、怕刮擦，需要细心保养。',
+    noteEn: 'Organic gems come from living things. They are soft and sensitive to acids, heat and scratches, so they need gentle care.' },
+  synthetic: { zh: '合成与仿制', en: 'Synthetic & imitation', tone: 'warn', tagZh: '合成 / 仿制', tagEn: 'Synthetic / imitation',
+    noteZh: '这是合成品或仿制品，不是天然宝石。了解它，是为了避免被当作天然宝石卖给你。',
+    noteEn: 'This is a synthetic or imitation, not a natural gem. Know it so it can’t be sold to you as natural.' }
+};
+const GROUP_ORDER = ['collector', 'organic', 'synthetic'];
+const grpName = k => L(GROUPS[k].zh, GROUPS[k].en);
+const grpTag = k => `<span class="tag ${GROUPS[k].tone}">${L(GROUPS[k].tagZh, GROUPS[k].tagEn)}</span>`;
+const grpNote = k => L(GROUPS[k].noteZh, GROUPS[k].noteEn);
+
+/* ---------- helpers ---------- */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num = s => { const m = String(s ?? '').replace('½', '.5').replace('¼', '.25').match(/\d+(\.\d+)?/); return m ? parseFloat(m[0]) : -1; };
+
+function mix(hex, other, t){
+  const p = h => [1,3,5].map(i => parseInt(h.slice(i, i+2), 16));
+  const a = p(hex), b = p(other);
+  return '#' + a.map((v,i) => Math.round(v + (b[i]-v)*t).toString(16).padStart(2,'0')).join('');
+}
+
+const valueScore = g => g.dur * 1.2 + (5 - g.price) * 1.0 + (2 - g.treat) * 0.5;
+const durLabel = d => d >= 4 ? L('日常戒指 OK', 'Daily ring OK') : d === 3 ? L('戒指需小心', 'Rings: take care') : L('建议吊坠耳饰', 'Pendants & earrings');
+
+// 选中颜色是宝石主色时用它自己的代表色，否则用通用色并微调深浅
+function displayHex(g){
+  for (const k of state.colors){
+    if (!g.colors.includes(k)) continue;
+    if (g.colors[0] === k) return g.sig;
+    const n = [...g.id].reduce((s, ch) => s + ch.charCodeAt(0), 0) % 5;
+    const base = COLOR[k].hex;
+    return n < 2 ? mix(base, '#ffffff', .12 + n * .1) : mix(base, '#000000', (n - 2) * .1);
+  }
+  return g.sig;
+}
+
+/* ---------- 宝石绘制 ----------
+ * 刻面宝石按切工结构画出每个面，并按光线方向（左上方）单独着色；
+ * 素面、珍珠用多层渐变表现透光、反光和特殊光学效应。
+ */
+let uid = 0;
+const LIGHT = -Math.PI * 3 / 4;            // 光从左上方照来
+const FIRE_IDS = ['diamond', 'lab-diamond', 'moissanite', 'zircon', 'demantoid'];
+const SHAPE_OF = {
+  ruby: 'oval', sapphire: 'oval', spinel: 'oval', tanzanite: 'oval', topaz: 'oval', iolite: 'oval',
+  peridot: 'oval', alexandrite: 'oval', citrine: 'oval', amethyst: 'oval',
+  emerald: 'step', aquamarine: 'step', tourmaline: 'step', morganite: 'step', kunzite: 'step'
+};
+// 明暗：t>0 提亮，t<0 压暗
+const tone = (hex, t) => t >= 0 ? mix(hex, '#ffffff', Math.min(.92, t)) : mix(hex, '#000000', Math.min(.85, -t));
+const pt = p => p.map(v => v.toFixed(1)).join(',');
+const poly = (ps, fill, extra = '') => `<polygon points="${ps.map(pt).join(' ')}" fill="${fill}"${extra}/>`;
+const lit = a => Math.cos(a - LIGHT);      // 朝向光源 = 1，背光 = -1
+const glint = (x, y, s, o = 1) => `<path d="M${x} ${y - s}L${x + s * .22} ${y - s * .22}L${x + s} ${y}L${x + s * .22} ${y + s * .22}L${x} ${y + s}L${x - s * .22} ${y + s * .22}L${x - s} ${y}L${x - s * .22} ${y - s * .22}Z" fill="#fff" opacity="${o}"/>`;
+
+function gemSVG(g, hex){
+  const id = 'g' + (++uid);
+  const shape = g.cut === 'pearl' ? 'pearl' : g.cut === 'cab' ? 'cab' : (SHAPE_OF[g.id] || 'round');
+  const body = shape === 'pearl' ? pearlSVG(id, hex)
+    : shape === 'cab' ? cabSVG(id, hex, g)
+    : shape === 'step' ? stepSVG(id, hex)
+    : brilliantSVG(id, hex, g, shape === 'oval');
+  return `<svg viewBox="0 0 100 100" aria-hidden="true">${body}</svg>`;
+}
+
+/* 圆形 / 椭圆明亮式切工：台面 + 8 星刻面 + 8 风筝面 + 16 上腰面 */
+function brilliantSVG(id, hex, g, oval){
+  const R = 46, C = 50, TAU = Math.PI * 2, a0 = -Math.PI / 2 + Math.PI / 8;
+  const sx = oval ? .8 : 1;
+  const P = (r, a) => [C + r * Math.cos(a) * sx, C + r * Math.sin(a)];
+  const ang = i => a0 + i * TAU / 8, mid = i => a0 + (i + .5) * TAU / 8;
+  const T = [], S = [], G = [], M = [];
+  for (let i = 0; i < 8; i++){ T.push(P(R * .52, ang(i))); S.push(P(R * .78, mid(i))); G.push(P(R, ang(i))); M.push(P(R, mid(i))); }
+  const change = g.special === 'change';
+  const col = (x, t) => tone(change ? (x < C ? '#1d8a5e' : '#a8234f') : hex, t);
+  const cx = ps => ps.reduce((s, p) => s + p[0], 0) / ps.length;
+  let out = '';
+  for (let i = 0; i < 8; i++){
+    const j = (i + 1) % 8, k = (i + 7) % 8;
+    const ug1 = [S[i], G[i], M[i]], ug2 = [S[i], M[i], G[j]];
+    out += poly(ug1, col(cx(ug1), -.35 + .45 * lit(mid(i) - .2)));
+    out += poly(ug2, col(cx(ug2), -.08 + .45 * lit(mid(i) + .2)));
+    const kite = [T[i], S[i], G[i], S[k]];
+    out += poly(kite, col(cx(kite), (i % 2 ? .02 : .16) + .42 * lit(ang(i))));
+    const star = [T[i], T[j], S[i]];
+    out += poly(star, col(cx(star), .22 + .32 * lit(mid(i)) - (i % 2 ? .12 : 0)));
+  }
+  // 台面：底色偏亮，透过台面能看到亭部反射出的 8 支“箭头”
+  const tg = id + 't';
+  let table = poly(T, col(C - 1, .18), ' stroke="none"');
+  for (let i = 0; i < 8; i++){
+    const a = ang(i), w = .2;
+    const arrow = [[C, C], P(R * .2, a - w * 2.2), T[i], P(R * .2, a + w * 2.2)];
+    table += poly(arrow, col(cx(arrow), -.42 + .15 * lit(a)), ' opacity=".75" stroke="none"');
+  }
+  const fire = FIRE_IDS.includes(g.id)
+    ? [['#ff5d6c', 30, 58], ['#5cb8ff', 66, 40], ['#ffd45c', 58, 70], ['#7dff9b', 40, 76]].map(([c, x, y]) => `<circle cx="${C + (x - C) * sx}" cy="${y}" r="1.8" fill="${c}" opacity=".85"/>`).join('')
+    : '';
+  return `<defs><linearGradient id="${tg}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></linearGradient></defs>
+    <ellipse cx="${C}" cy="${C}" rx="${R * sx + .8}" ry="${R + .8}" fill="${tone(change ? '#145f43' : hex, -.55)}"/>
+    <g stroke="#fff" stroke-opacity=".22" stroke-width=".5" stroke-linejoin="round">${out}${table}</g>
+    ${poly(T, `url(#${tg})`)}
+    ${fire}
+    ${glint(C - 14 * sx, 30, 7)}${glint(C + 16 * sx, 62, 3.5, .8)}`;
+}
+
+/* 祖母绿型阶梯切工：同心八边形台阶形成“镜廊” */
+function stepSVG(id, hex){
+  const oct = (x0, y0, x1, y1, c) => [[x0 + c, y0], [x1 - c, y0], [x1, y0 + c], [x1, y1 - c], [x1 - c, y1], [x0 + c, y1], [x0, y1 - c], [x0, y0 + c]];
+  const N = [-90, -45, 0, 45, 90, 135, 180, -135].map(d => d * Math.PI / 180);
+  const rings = [], steps = 4, d = 7;
+  for (let k = 0; k <= steps; k++) rings.push(oct(16 + k * d, 4 + k * d, 84 - k * d, 96 - k * d, Math.max(3, 13 - k * 2.2)));
+  let out = '';
+  for (let k = 0; k < steps; k++){
+    const o = rings[k], n = rings[k + 1];
+    for (let s = 0; s < 8; s++){
+      const t = (s + 1) % 8;
+      out += poly([o[s], o[t], n[t], n[s]], tone(hex, (k % 2 ? .18 : -.12) + .36 * lit(N[s]) - k * .04));
+    }
+  }
+  const tb = rings[steps], tg = id + 't', refl = '';
+  return `<defs><linearGradient id="${tg}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${tone(hex, .35)}"/><stop offset=".55" stop-color="${hex}"/><stop offset="1" stop-color="${tone(hex, -.3)}"/></linearGradient></defs>
+    ${poly(rings[0], tone(hex, -.55), ' transform="translate(0 .6)"')}
+    <g stroke="#fff" stroke-opacity=".2" stroke-width=".5" stroke-linejoin="round">${out}</g>
+    ${poly(tb, `url(#${tg})`)}${refl}
+    <path d="M${tb[0][0] + 3} ${tb[0][1] + 4}L${tb[1][0] - 8} ${tb[1][1] + 4}L${tb[0][0] + 3} ${tb[0][1] + 22}Z" fill="#fff" opacity=".22"/>
+    ${glint(30, 18, 6)}`;
+}
+
+/* 素面：透光、柔和反光、底部轮廓光，以及猫眼、变彩、月光、纹理 */
+function cabSVG(id, hex, g){
+  const rx = 42, ry = 35, C = 50;
+  const opaque = ['turquoise', 'lapis', 'nephrite'].includes(g.id) || /^(不透明|亚半透明)/.test(g.trans || '');
+  const clip = id + 'c', base = id + 'b', glow = id + 'g', spec = id + 's', blur = id + 'f';
+  let fx = '';
+  if (g.special === 'cat'){
+    fx = `<rect x="${C - 3}" y="${C - ry}" width="6" height="${ry * 2}" fill="#fffbe6" opacity=".95" filter="url(#${blur})"/>
+          <rect x="${C - 9}" y="${C - ry}" width="18" height="${ry * 2}" fill="#fff" opacity=".22" filter="url(#${blur})"/>`;
+  } else if (g.special === 'opal'){
+    // 变彩：很多细碎、方向不一的彩色片，轻微模糊后叠加
+    const cs = ['#2ec4ff', '#3ddc84', '#8b5cf6', '#00e0c6', '#ffb703', '#ff4d6d', '#5b8cff', '#a6ff4d'];
+    let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    let flecks = '';
+    for (let i = 0; i < 42; i++){
+      const x = 12 + rnd() * 76, y = 18 + rnd() * 64, w = 7 + rnd() * 9, h = 3.5 + rnd() * 4.5;
+      flecks += `<rect x="${(x - w / 2).toFixed(1)}" y="${(y - h / 2).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="1" fill="${cs[i % cs.length]}" opacity="${(.55 + rnd() * .4).toFixed(2)}" transform="rotate(${(rnd() * 180).toFixed(0)} ${x.toFixed(1)} ${y.toFixed(1)})"/>`;
+    }
+    fx = `<filter id="${id}o"><feGaussianBlur stdDeviation="1.3"/></filter><g filter="url(#${id}o)" opacity=".9">${flecks}</g>`;
+  } else if (g.id === 'moonstone'){
+    fx = `<ellipse cx="${C - 4}" cy="${C - 6}" rx="26" ry="16" fill="#a9d1ff" opacity=".85" filter="url(#${blur})"/>`;
+  } else if (g.id === 'lapis'){
+    const dots = [[34, 40], [58, 36], [66, 58], [44, 62], [28, 56], [52, 50], [72, 44], [40, 48], [60, 70], [48, 30]];
+    fx = dots.map(([x, y], i) => `<circle cx="${x}" cy="${y}" r="${i % 3 ? .9 : 1.5}" fill="#f2cf63" opacity=".9"/>`).join('')
+       + `<ellipse cx="62" cy="62" rx="8" ry="4" fill="#e9eef7" opacity=".35" filter="url(#${blur})"/>`;
+  } else if (g.id === 'turquoise'){
+    const v = tone('#5a4127', -.2);
+    fx = `<g fill="none" stroke="${v}" stroke-width="1" opacity=".55" stroke-linecap="round">
+      <path d="M14 46 C26 40 30 52 42 48 S58 36 66 44 S80 50 88 46"/><path d="M42 48 C44 58 38 66 46 76"/><path d="M66 44 C70 34 64 26 70 18"/></g>`;
+  } else if (g.id === 'jadeite' || g.id === 'nephrite'){
+    fx = `<g filter="url(#${blur})" opacity=".35"><ellipse cx="36" cy="58" rx="10" ry="5" fill="#fff"/><ellipse cx="64" cy="42" rx="8" ry="4" fill="${tone(hex, -.3)}"/></g>`;
+  }
+  return `<defs>
+      <clipPath id="${clip}"><ellipse cx="${C}" cy="${C}" rx="${rx}" ry="${ry}"/></clipPath>
+      <radialGradient id="${base}" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="${tone(hex, opaque ? .2 : .35)}"/><stop offset=".6" stop-color="${hex}"/><stop offset="1" stop-color="${tone(hex, -.5)}"/></radialGradient>
+      <radialGradient id="${glow}" cx="58%" cy="72%" r="45%"><stop offset="0" stop-color="#fff" stop-opacity="${opaque ? .12 : .45}"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+      <linearGradient id="${spec}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <filter id="${blur}" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.6"/></filter>
+    </defs>
+    <ellipse cx="${C}" cy="${C}" rx="${rx}" ry="${ry}" fill="url(#${base})"/>
+    <g clip-path="url(#${clip})">${fx}<ellipse cx="${C}" cy="${C}" rx="${rx}" ry="${ry}" fill="url(#${glow})"/></g>
+    <ellipse cx="${C}" cy="${C}" rx="${rx}" ry="${ry}" fill="none" stroke="${tone(hex, -.55)}" stroke-opacity=".5" stroke-width="1"/>
+    <path d="M${C - 30} ${C + 20} Q${C} ${C + ry + 6} ${C + 30} ${C + 20}" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="38" cy="33" rx="17" ry="8" fill="url(#${spec})" transform="rotate(-18 38 33)"/>
+    <circle cx="32" cy="31" r="2.4" fill="#fff" opacity=".95"/>`;
+}
+
+/* 珍珠：镜面光泽 + 粉绿晕彩 */
+function pearlSVG(id, hex){
+  const b = id + 'b', o = id + 'o', s = id + 's', f = id + 'f';
+  return `<defs>
+      <radialGradient id="${b}" cx="40%" cy="36%" r="68%"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="${tone(hex, .45)}"/><stop offset=".8" stop-color="${hex}"/><stop offset="1" stop-color="${tone(hex, -.35)}"/></radialGradient>
+      <radialGradient id="${o}" cx="50%" cy="50%" r="50%"><stop offset=".55" stop-color="#ffd1e6" stop-opacity="0"/><stop offset=".82" stop-color="#ffc2dc" stop-opacity=".35"/><stop offset="1" stop-color="#a8f0dc" stop-opacity=".35"/></radialGradient>
+      <radialGradient id="${s}" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+      <filter id="${f}"><feGaussianBlur stdDeviation="1.5"/></filter>
+    </defs>
+    <circle cx="50" cy="50" r="40" fill="url(#${b})"/>
+    <circle cx="50" cy="50" r="40" fill="url(#${o})"/>
+    <ellipse cx="38" cy="34" rx="13" ry="9" fill="url(#${s})" transform="rotate(-30 38 34)"/>
+    <circle cx="35" cy="31" r="3" fill="#fff" filter="url(#${f})"/>
+    <path d="M24 66 Q50 92 76 66" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2.5" stroke-linecap="round" filter="url(#${f})"/>`;
+}
+
+function extraLook(r){
+  let hex = null;
+  for (const k of state.colors) if (r.colors.includes(k)) { hex = COLOR[k].hex; break; }
+  hex = hex || (r.colors.length ? COLOR[r.colors[0]].hex : '#9a9a9a');
+  return { hex, shape: { id: r.id, cut: /^(透明|亚透明)/.test(r.trans) ? 'facet' : 'cab', trans: r.trans } };
+}
+
+const priceHTML = p => `<b class="pr">${'$'.repeat(p)}<span>${'$'.repeat(4-p)}</span></b>`;
+const barHTML = d => `<span class="bar">${[1,2,3,4,5].map(i => `<i class="${i<=d?'on':''}"></i>`).join('')}</span>`;
+const treatHTML = t => `<span class="tag ${TREAT_LEVELS[t].tone}">${tlName(t)}</span>`;
+const dotsHTML = (cs, hl) => `<div class="dots">${cs.map(k => `<i class="${hl && state.colors.has(k) ? 'on' : ''}" style="background:${COLOR[k].hex}" title="${colName(k)}"></i>`).join('')}</div>`;
+const tchip = (k, dim) => `<a class="tchip${dim ? ' dim' : ''}" href="#treatments/${k}" title="${dim ? L('偶见', 'Occasional') : L('常见', 'Common')}: ${esc(trName(k))}">${TREATMENTS[k].icon} ${esc(trName(k))}</a>`;
+const gchip = (g, dim) => `<button class="gchip${dim ? ' dim' : ''}" data-open="${g.id}">${gemSVG(g, g.sig)}${esc(gName(g))}</button>`;
+const xchip = r => { const { hex, shape } = extraLook(r); return `<button class="gchip" data-openx="${r.id}">${gemSVG(shape, hex)}${esc(xName(r))}</button>`; };
+const pips = (n, good) => `<span class="pips ${good ? 'good' : 'bad'}">${[1,2,3].map(i => `<i class="${i<=n?'on':''}"></i>`).join('')}</span>`;
+const cnTone = k => TREATMENTS[k].cn === '优化' ? 'ok' : TREATMENTS[k].cn === '处理' ? 'warn' : 'mid';
+const matchQ = (q, ...parts) => !q || parts.join(' ').toLowerCase().includes(q.toLowerCase());
+
+/* ================= 探索 ================= */
+function passesFilters(g, ignoreColors){
+  if (!ignoreColors && state.colors.size && !g.colors.some(k => state.colors.has(k))) return false;
+  if (g.price > state.budget) return false;
+  if (state.use === 'daily' && g.dur < 4) return false;
+  if (state.cut !== 'any' && !g.cuts.includes(state.cut)) return false;
+  if (state.family !== 'all' && g.family !== state.family) return false;
+  if (g.treat > state.treat) return false;
+  if (state.exclude.size && [...g.t, ...g.t2].some(k => state.exclude.has(k))) return false;
+  if (state.origin === 'natural' && !g.natural) return false;
+  if (!matchQ(state.q, g.zh, g.en, g.family, FAMILY_EN[g.family] || '')) return false;
+  return true;
+}
+
+function sorted(list){
+  const by = {
+    value: (a,b) => valueScore(b) - valueScore(a),
+    price: (a,b) => a.price - b.price || valueScore(b) - valueScore(a),
+    'price-d': (a,b) => b.price - a.price || b.dur - a.dur,
+    dur: (a,b) => b.dur - a.dur || a.price - b.price,
+    treat: (a,b) => a.treat - b.treat || valueScore(b) - valueScore(a)
+  }[state.sort];
+  return list.slice().sort(by);
+}
+
+function renderColors(){
+  $('#colors').innerHTML = COLORS.map(c => {
+    const n = GEMS.filter(g => g.colors.includes(c.k) && passesFilters(g, true)).length;
+    return `<button class="chip" data-c="${c.k}" aria-pressed="${state.colors.has(c.k)}" title="${c.zh} ${c.en}">
+      <span class="dot" style="background:${c.hex}"></span><span class="lbl">${colName(c.k)}</span><span class="cnt">${cnt(n)}</span></button>`;
+  }).join('');
+}
+
+const SEGS = () => ({
+  'f-budget': { key: 'budget', opts: [[4, L('不限', 'Any')], [1, L('入门 <$100', 'Entry <$100')], [2, '≤ $1,000'], [3, '≤ $5,000']] },
+  'f-use':    { key: 'use',    opts: [['any', L('都可以', 'Any')], ['daily', L('日常戒指（耐戴）', 'Daily ring (durable)')]] },
+  'f-cut':    { key: 'cut',    opts: [['any', L('不限', 'Any')], ...Object.keys(CUTS).map(k => [k, cutName(k)])] },
+  'f-treat':  { key: 'treat',  opts: [[2, L('都接受', 'Any')], [1, L('只接受常规处理（如加热）', 'Routine only (e.g. heating)')], [0, L('只要通常无处理', 'Usually untreated only')]] },
+  'f-origin': { key: 'origin', opts: [['all', L('含实验室宝石', 'Include lab-created')], ['natural', L('只看天然', 'Natural only')]] }
+});
+function renderSegs(){
+  for (const [id, cfg] of Object.entries(SEGS())){
+    $('#'+id).innerHTML = cfg.opts.map(([v,l]) =>
+      `<button data-k="${cfg.key}" data-v="${v}" aria-pressed="${String(state[cfg.key])===String(v)}">${l}</button>`).join('');
+  }
+  $('#f-family').innerHTML = `<option value="all">${L('全部品种', 'All varieties')}</option>` + FAMILIES.map(f =>
+    `<option value="${esc(f)}" ${state.family === f ? 'selected' : ''}>${esc(famName(f))} (${GEMS.filter(g => g.family === f).length})</option>`).join('');
+  $('#f-exclude').innerHTML = TREATMENT_ORDER.map(k => {
+    const n = GEMS.filter(g => g.t.includes(k) || g.t2.includes(k)).length;
+    return `<button data-ex="${k}" aria-pressed="${state.exclude.has(k)}" title="${L(`会隐藏 ${n} 种宝石`, `Hides ${n} gems`)}">${TREATMENTS[k].icon} ${esc(trName(k))}</button>`;
+  }).join('');
+  const active = Object.keys(DEFAULTS).filter(k => state[k] !== DEFAULTS[k]).length + (state.colors.size ? 1 : 0) + (state.exclude.size ? 1 : 0);
+  $('#f-summary').textContent = active ? L(`已设置 ${active} 项条件`, `${active} filter${active > 1 ? 's' : ''} set`) : '';
+}
+
+function renderGrid(){
+  const list = sorted(GEMS.filter(g => passesFilters(g)));
+  $('#count').textContent = cnt(list.length);
+  $('#active').innerHTML = [...state.colors].map(k => `<span><i style="background:${COLOR[k].hex}"></i>${colName(k)}</span>`).join('');
+  if (!list.length){
+    $('#grid').innerHTML = `<div class="empty">${L('没有符合条件的宝石。<br>试试放宽预算、处理方式或切工条件。', 'No gems match.<br>Try relaxing the budget, treatment or cut filters.')}<br><button id="reset">${L('重置筛选条件', 'Reset filters')}</button></div>`;
+    return;
+  }
+  const picks = state.colors.size
+    ? new Set(list.filter(g => g.natural).sort((a,b) => valueScore(b) - valueScore(a)).slice(0,2).map(g => g.id))
+    : new Set();
+  $('#grid').innerHTML = list.map(g => {
+    const hex = displayHex(g), inCmp = state.compare.includes(g.id);
+    return `<article class="card" tabindex="0" data-id="${g.id}" aria-label="${esc(gName(g))}">
+      <div class="top tint" style="--h:${hex}">
+        ${picks.has(g.id) ? `<span class="badge">${L('性价比之选', 'Best value')}</span>` : ''}
+        ${g.natural ? '' : `<span class="badge syn">${L('实验室', 'Lab')}</span>`}
+        ${gemSVG(g, hex)}
+      </div>
+      <div class="body">
+        <h3>${esc(gName(g))}<small>${esc(gAlt(g))} · ${esc(famName(g.family))}</small></h3>
+        <p class="line">${esc(gf(g, 'line'))}</p>
+        ${dotsHTML(g.colors, true)}
+        <dl class="meta">
+          <dt>${L('价格', 'Price')}</dt><dd>${priceHTML(g.price)}</dd>
+          <dt>${L('耐久', 'Durability')}</dt><dd>${barHTML(g.dur)}<span class="bar-txt">${durLabel(g.dur)}</span></dd>
+          <dt>${L('处理', 'Treatment')}</dt><dd>${treatHTML(g.treat)}<span class="tl">${g.t.length ? L('常见', 'often ') + g.t.map(k => trName(k)).join(L('·', ', ')) : ''}</span></dd>
+        </dl>
+        <button class="cmp-btn" data-cmp="${g.id}" aria-pressed="${inCmp}">${inCmp ? L('✓ 已加入对比', '✓ In compare') : L('＋ 加入对比', '+ Compare')}</button>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+function extraPasses(r){
+  if (state.colors.size && !r.colors.some(k => state.colors.has(k))) return false;
+  if (state.use === 'daily' && !(r.dur >= 4)) return false;
+  if (state.origin === 'natural' && r.group === 'synthetic') return false;
+  if (!matchQ(state.q, r.zh, r.en)) return false;
+  return true;
+}
+
+function renderMore(){
+  const all = EXTRA.filter(extraPasses);
+  $('#more-count').textContent = cnt(all.length);
+  $('#more-toggle').textContent = state.moreOpen ? L('收起', 'Hide') : L('展开', 'Show');
+  $('#more-toggle').setAttribute('aria-expanded', state.moreOpen);
+  $('#more-body').hidden = !state.moreOpen;
+  if (!state.moreOpen) return;
+  $('#more-tabs').innerHTML = [['all', L('全部', 'All'), all.length], ...GROUP_ORDER.map(g => [g, grpName(g), all.filter(r => r.group === g).length])]
+    .map(([v, l, n]) => `<button data-mg="${v}" aria-pressed="${state.moreGroup === v}">${l} ${n}</button>`).join('');
+  const list = all.filter(r => state.moreGroup === 'all' || r.group === state.moreGroup)
+    .sort((a, b) => GROUP_ORDER.indexOf(a.group) - GROUP_ORDER.indexOf(b.group) || xName(a).localeCompare(xName(b), L('zh', 'en')));
+  $('#more-grid').innerHTML = list.length ? list.map(r => {
+    const { hex, shape } = extraLook(r);
+    return `<article class="card mini" tabindex="0" data-x="${r.id}" aria-label="${esc(xName(r))}">
+      <div class="top tint" style="--h:${hex}">${gemSVG(shape, hex)}</div>
+      <div class="body">
+        <h3>${esc(xName(r))}<small>${esc(xAlt(r))}</small></h3>
+        ${dotsHTML(r.colors, true)}
+        <dl class="meta"><dt>${L('硬度', 'Hardness')}</dt><dd>${esc(r.hard)}</dd><dt>${L('透明', 'Clarity')}</dt><dd>${esc(xf(r, 'trans'))}</dd></dl>
+        <div>${r.protected ? `<span class="tag warn">${L('受保护·禁止买卖', 'Protected · do not buy')}</span>` : grpTag(r.group)}</div>
+      </div>
+    </article>`;
+  }).join('') : `<div class="empty">${L('这个分类下没有符合条件的宝石。', 'No gems in this group match.')}</div>`;
+}
+
+function renderExplore(){ renderColors(); renderSegs(); renderGrid(); renderMore(); }
+
+/* ================= 百科 ================= */
+function encRows(){
+  return [
+    ...GEMS.map(g => { const p = physOf(g); return {
+      kind: 'main', obj: g, name: gName(g), alt: gAlt(g), zh: g.zh, en: g.en, cat: famName(g.family), colors: g.colors, hard: g.hard,
+      ri: p.ri, sg: p.sg, optic: xf(p, 'optic'), system: xf(p, 'system'),
+      fx: [gf(g, 'fx') || xf(p, 'phen'), gf(g, 'incl')].filter(Boolean).join(L('；', '; ')) }; }),
+    ...EXTRA.map(r => ({
+      kind: r.group, obj: r, name: xName(r), alt: xAlt(r), zh: r.zh || '', en: r.en, cat: grpName(r.group), colors: r.colors, hard: r.hard,
+      ri: xf(r, 'ri'), sg: r.sg, optic: xf(r, 'optic'), system: xf(r, 'system'), fx: xf(r, 'phen') || '' }))
+  ];
+}
+
+function renderEncyclopedia(){
+  const ENC = encRows(), q = state.encQ;
+  const groups = [['all', L('全部', 'All')], ['main', L('常见宝石', 'Popular')], ...GROUP_ORDER.map(k => [k, grpName(k)])];
+  const inGroup = (e, v) => v === 'all' || e.kind === v;
+  const hit = e => matchQ(q, e.zh, e.en, e.cat);
+  $('#enc-group').innerHTML = groups.map(([v, l]) =>
+    `<button data-eg="${v}" aria-pressed="${state.encGroup === v}">${l} ${ENC.filter(e => inGroup(e, v) && hit(e)).length}</button>`).join('');
+  const sorter = {
+    name: (a, b) => (a.kind === 'main' ? 0 : 1) - (b.kind === 'main' ? 0 : 1) || a.name.localeCompare(b.name, L('zh', 'en')),
+    hard: (a, b) => num(b.hard) - num(a.hard),
+    ri: (a, b) => num(b.ri) - num(a.ri),
+    sg: (a, b) => num(b.sg) - num(a.sg)
+  }[state.encSort];
+  const list = ENC.filter(e => inGroup(e, state.encGroup) && hit(e)).sort(sorter);
+  $('#enc-body').innerHTML = list.length ? list.map(e => {
+    const isMain = e.kind === 'main';
+    const look = isMain ? { hex: e.obj.sig, shape: e.obj } : extraLook(e.obj);
+    const catTag = isMain ? `<span class="tag ok">${esc(e.cat)}</span>`
+      : e.obj.protected ? `<span class="tag warn">${L('受保护', 'Protected')}</span>`
+      : `<span class="tag ${GROUPS[e.kind].tone}">${esc(e.cat)}</span>`;
+    return `<tr ${isMain ? `data-open="${e.obj.id}"` : `data-openx="${e.obj.id}"`} tabindex="0">
+      <td><div class="nm">${gemSVG(look.shape, look.hex)}<div><b>${esc(e.name)}</b><small>${esc(e.alt)}</small></div></div></td>
+      <td data-l="${L('类别', 'Type')}">${catTag}</td>
+      <td data-l="${L('颜色', 'Colours')}">${dotsHTML(e.colors)}</td>
+      <td data-l="${L('硬度', 'Hardness')}" class="num">${esc(e.hard)}</td>
+      <td data-l="${L('折射率', 'RI')}" class="num">${esc(e.ri || '—')}</td>
+      <td data-l="${L('比重', 'SG')}" class="num">${esc(e.sg || '—')}</td>
+      <td data-l="${L('光性', 'Optic')}">${esc([e.optic, e.system].filter(Boolean).join(' · ') || '—')}</td>
+      <td data-l="${L('特征', 'Features')}" class="fx">${esc(e.fx || '—')}</td>
+    </tr>`;
+  }).join('') : `<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:30px">${L('没有找到相关宝石', 'No gems found')}</td></tr>`;
+}
+
+/* ================= 对比 ================= */
+function toggleCompare(id){
+  const i = state.compare.indexOf(id);
+  if (i >= 0) state.compare.splice(i, 1);
+  else if (state.compare.length < MAX_CMP) state.compare.push(id);
+  else { flashTray(); return; }
+  refresh();
+  if (state.open) openDrawer(state.open);
+}
+
+function flashTray(){
+  $('#tray').animate([{transform:'translate(-50%,0) scale(1)'},{transform:'translate(-50%,0) scale(1.05)'},{transform:'translate(-50%,0) scale(1)'}],{duration:300});
+}
+
+function renderTray(){
+  const n = state.compare.length;
+  $('#tray').classList.toggle('show', n > 0 && state.page !== 'compare');
+  $('#tray-items').innerHTML = state.compare.map(id => {
+    const g = GEM[id];
+    return `<span class="it">${gemSVG(g, displayHex(g))}${esc(gName(g))}<button data-rm="${id}" aria-label="${L('移除', 'Remove')} ${esc(gName(g))}">✕</button></span>`;
+  }).join('');
+  const go = $('#tray-go');
+  go.disabled = n < 2;
+  go.textContent = n < 2 ? L(`再选 ${2 - n} 个`, `Pick ${2 - n} more`) : L(`对比 ${n} 个`, `Compare ${n}`);
+  $('#nav-cnt').hidden = !n;
+  $('#nav-cnt').textContent = n;
+}
+
+function verdict(gs){
+  const best = (fn, better) => gs.reduce((a,b) => better(fn(b), fn(a)) ? b : a);
+  const cheap = best(g => g.price, (x,y) => x < y);
+  const tough = best(g => g.dur, (x,y) => x > y);
+  const clean = best(g => g.treat, (x,y) => x < y);
+  const value = best(valueScore, (x,y) => x > y);
+  const same = f => gs.every(g => f(g) === f(gs[0]));
+  const b = g => `<b>${esc(gName(g))}</b>`;
+  const out = [];
+  if (!same(g => g.dur)) out.push(L(`要天天戴（比如戒指）→ 选 ${b(tough)}，耐久度 ${tough.dur}/5。`, `For everyday wear (e.g. a ring) → ${b(tough)}, durability ${tough.dur}/5.`));
+  if (!same(g => g.price)) out.push(L(`预算有限 → 选 ${b(cheap)}，价格档位最低（${tierName(cheap.price)}）。`, `On a tight budget → ${b(cheap)}, the lowest price tier (${tierName(cheap.price)}).`));
+  if (!same(g => g.treat)) out.push(L(`在意天然原色、不想处理 → 选 ${b(clean)}（${tlName(clean.treat)}）。`, `Want natural, untreated colour → ${b(clean)} (${tlName(clean.treat).toLowerCase()}).`));
+  out.push(L(`综合价格、耐久和处理来看，性价比最高的是 ${b(value)}。`, `Balancing price, durability and treatment, the best value is ${b(value)}.`));
+  const fragile = gs.filter(g => g.dur <= 2);
+  if (fragile.length) out.push(L(`注意：${fragile.map(g => esc(g.zh)).join('、')} 比较娇贵，更适合吊坠或耳饰。`, `Note: ${fragile.map(g => esc(g.en)).join(', ')} ${fragile.length > 1 ? 'are' : 'is'} delicate – better for pendants or earrings.`));
+  return out;
+}
+
+const PRESETS = [
+  ['ruby,spinel,rhodolite'], ['sapphire,tanzanite,iolite'], ['diamond,lab-diamond,moissanite'], ['emerald,tsavorite,tourmaline']
+];
+
+function renderCompare(){
+  const n = state.compare.length;
+  $('#cmp-add').innerHTML = `<option value="">${n >= MAX_CMP ? L('已满 3 个', 'Full (3 max)') : L('＋ 添加宝石…', '+ Add a gem…')}</option>` +
+    FAMILIES.map(f => `<optgroup label="${esc(famName(f))}">${GEMS.filter(g => g.family === f && !state.compare.includes(g.id))
+      .map(g => `<option value="${g.id}">${esc(gName(g))} · ${esc(gAlt(g))}</option>`).join('')}</optgroup>`).join('');
+  $('#cmp-add').disabled = n >= MAX_CMP;
+  $('#cmp-clear').hidden = !n;
+
+  if (n < 2){
+    $('#cmp-body').innerHTML = `<div class="empty" style="display:block">
+      ${n ? L(`已选 ${esc(GEM[state.compare[0]].zh)}，`, `${esc(GEM[state.compare[0]].en)} selected. `) : ''}${L('至少需要 2 种宝石才能对比。', 'You need at least 2 gems to compare.')}<br>
+      ${L('用上面的下拉框添加，或去 <a href="#explore">探索页</a> 点卡片上的“加入对比”。', 'Add them with the menu above, or tap “+ Compare” on a card in <a href="#explore">Explore</a>.')}
+      <div style="margin-top:14px;font-size:13px">${L('试试这些常见组合：', 'Try a popular match-up:')}
+        <div class="gchips" style="justify-content:center;margin-top:8px">
+          ${PRESETS.map(([ids]) => `<button class="secondary" data-preset="${ids}">${ids.split(',').map(id => esc(gName(GEM[id]))).join(' vs ')}</button>`).join('')}
+        </div></div></div>`;
+    return;
+  }
+
+  const gs = state.compare.map(id => GEM[id]);
+  const minP = Math.min(...gs.map(g => g.price)), maxD = Math.max(...gs.map(g => g.dur)), minT = Math.min(...gs.map(g => g.treat));
+  const row = (label, fn, bestFn) => `<tr><th>${label}</th>${gs.map(g => `<td class="${bestFn && bestFn(g) ? 'best' : ''}">${fn(g)}</td>`).join('')}</tr>`;
+  const sec = label => `<tr><th class="secrow" colspan="${gs.length + 1}"><span>${label}</span></th></tr>`;
+  const P = g => physOf(g);
+  $('#cmp-body').innerHTML = `
+    <div class="verdict"><b>${L('怎么选？', 'Which one?')}</b><ul>${verdict(gs).map(x => `<li>${x}</li>`).join('')}</ul></div>
+    <div class="ctable-wrap"><table class="ct">
+      <colgroup><col class="lab">${gs.map(() => '<col>').join('')}</colgroup>
+      <thead><tr><th></th>${gs.map(g => `<th><div class="gh" data-open="${g.id}" style="cursor:pointer">${gemSVG(g, displayHex(g))}<b>${esc(gName(g))}</b><small>${esc(gAlt(g))}</small></div><button class="rm" data-rm="${g.id}" aria-label="${L('移除', 'Remove')}">✕</button></th>`).join('')}</tr></thead>
+      <tbody>
+        ${sec(L('选购', 'Buying'))}
+        ${row(L('颜色', 'Colours'), g => dotsHTML(g.colors))}
+        ${row(L('价格档位', 'Price tier'), g => `${priceHTML(g.price)} ${tierName(g.price)}`, g => g.price === minP)}
+        ${row(L('价格参考', 'Price guide'), g => esc(gf(g, 'priceText')))}
+        ${row(L('耐久度', 'Durability'), g => `${barHTML(g.dur)}<br><span class="bar-txt" style="margin:0">${durLabel(g.dur)}</span>`, g => g.dur === maxD)}
+        ${row(L('处理程度', 'Treatment'), g => treatHTML(g.treat), g => g.treat === minT)}
+        ${row(L('具体处理', 'Treatments'), g => (g.t.map(k => tchip(k)).join('') + g.t2.map(k => tchip(k, true)).join('')) || `<span class="tag ok">${tlName(0)}</span>`)}
+        ${row(L('最大优点', 'Biggest plus'), g => esc(gf(g, 'pros')[0]))}
+        ${row(L('最大缺点', 'Biggest minus'), g => esc(gf(g, 'cons')[0]))}
+        ${row(L('适合', 'Best for'), g => esc(gf(g, 'use')))}
+        ${row(L('小心混淆', 'Lookalikes'), g => gf(g, 'confuse').slice(0,3).map(esc).join(SEP()))}
+        ${sec(L('专业参数', 'Gemmological data'))}
+        ${row(L('品种', 'Variety'), g => esc(famName(g.family)))}
+        ${row(L('常见切工', 'Usual cuts'), g => g.cuts.map(cutName).join(SEP()))}
+        ${row(L('摩氏硬度', 'Mohs hardness'), g => esc(g.hard))}
+        ${row(L('折射率', 'RI'), g => esc(P(g).ri || '—'))}
+        ${row(L('比重', 'SG'), g => esc(P(g).sg || '—'))}
+        ${row(L('光性 / 晶系', 'Optic / system'), g => esc([xf(P(g), 'optic'), xf(P(g), 'system')].filter(Boolean).join(' · ') || '—'))}
+        ${row(L('内含物', 'Inclusions'), g => esc(gf(g, 'incl')))}
+      </tbody></table></div>`;
+}
+
+/* ================= 处理指南 ================= */
+function renderTreatments(){
+  $('#otypes').innerHTML = ORIGIN_TYPES.map(o => {
+    const e = ORIGIN_TYPES_EN[o.k];
+    return `<div class="otype ${o.tone}"><b>${esc(L(o.zh, o.en))}</b><small>${esc(L(o.en, o.zh))}</small><p>${esc(L(o.text, e.text))}</p><div class="ex">${L('例：', 'e.g. ')}${esc(L(o.ex, e.ex))}</div></div>`;
+  }).join('');
+
+  const onGems = (k, key) => GEMS.filter(g => g[key].includes(k));
+  $('#tmatrix').innerHTML = `<thead><tr><th>${L('处理方式', 'Treatment')}</th><th>${L('国标分类', 'GB class')}</th><th>${L('稳定性', 'Stability')}</th><th>${L('价值影响', 'Value impact')}</th><th>${L('市场上常见于', 'Common in')}</th></tr></thead><tbody>` +
+    TREATMENT_ORDER.map(k => { const t = TREATMENTS[k], c = onGems(k, 't');
+      return `<tr><td><a href="#treatments/${k}">${t.icon} ${esc(trName(k))}</a> <small style="color:var(--muted)">${esc(L(t.en, t.zh))}</small></td>
+        <td data-l="${L('国标', 'GB')}"><span class="tag ${cnTone(k)}">${esc(trf(k, 'cn'))}</span></td>
+        <td data-l="${L('稳定性', 'Stability')}">${pips(t.stable, true)}</td><td data-l="${L('价值影响', 'Value impact')}">${pips(t.impact, false)}</td>
+        <td data-l="${L('常见于', 'Common in')}" style="font-size:12.5px">${c.length ? c.map(g => esc(gName(g))).join(SEP()) : `<span style="color:var(--muted)">${L('（偶见）', '(occasional)')}</span>`}</td></tr>`;
+    }).join('') + `</tbody>`;
+
+  $('#tcards').innerHTML = TREATMENT_ORDER.map(k => {
+    const t = TREATMENTS[k], c = onGems(k, 't'), s = onGems(k, 't2');
+    return `<article class="tcard" id="tr-${k}">
+      <h3>${t.icon} ${esc(trName(k))} <small>${esc(L(t.en, t.zh))}</small></h3>
+      <div class="badges">
+        <span class="tag ${cnTone(k)}">${L('国标：', 'GB/T 16552: ')}${esc(trf(k, 'cn'))}</span>
+        <span class="tag na">${L('稳定性', 'Stability')} ${pips(t.stable, true)}</span>
+        <span class="tag na">${L('价值影响', 'Value impact')} ${pips(t.impact, false)}</span>
+      </div>
+      <dl>
+        <dt>${L('是什么', 'What')}</dt><dd>${esc(trf(k, 'what'))}</dd>
+        <dt>${L('为什么', 'Why')}</dt><dd>${esc(trf(k, 'why'))}</dd>
+        <dt>${L('风险', 'Risk')}</dt><dd>${esc(trf(k, 'risk'))}</dd>
+        <dt>${L('怎么问', 'Ask')}</dt><dd>${esc(trf(k, 'ask'))}</dd>
+        <dt>${L('怎么看', 'Spot it')}</dt><dd>${esc(trf(k, 'detect'))}</dd>
+      </dl>
+      ${c.length || s.length ? `<div class="on-gems">${c.length ? `${L('常见于：', 'Common in:')}<div class="gchips">${c.map(g => gchip(g)).join('')}</div>` : ''}
+        ${s.length ? `<div style="margin-top:8px">${L('偶见于：', 'Occasionally in:')}</div><div class="gchips">${s.map(g => gchip(g, true)).join('')}</div>` : ''}</div>` : ''}
+    </article>`;
+  }).join('');
+
+  $('#synth-list').innerHTML = GEMS.filter(g => !g.natural).map(g => gchip(g)).join('') + EXTRA.filter(r => r.group === 'synthetic').map(xchip).join('');
+}
+
+/* ================= 购买指南 ================= */
+function renderBuying(){
+  $('#bsteps').innerHTML = BUY_STEPS.map((s, i) => { const e = EN() ? BUY_STEPS_EN[i] : s; return `<li><b>${esc(e.t)}</b>${esc(e.d)}</li>`; }).join('');
+  const use = [
+    { t: L('每天戴的戒指', 'Everyday rings'), d: L('耐久度 4–5，不怕日常磕碰', 'Durability 4–5, handles daily knocks'), f: g => g.dur >= 4 },
+    { t: L('偶尔戴 / 包镶戒指', 'Occasional / bezel-set rings'), d: L('耐久度 3，注意避免撞击', 'Durability 3, avoid hard knocks'), f: g => g.dur === 3 },
+    { t: L('吊坠、耳饰、项链', 'Pendants, earrings, necklaces'), d: L('耐久度 1–2，娇贵但美丽', 'Durability 1–2, delicate but beautiful'), f: g => g.dur <= 2 }
+  ];
+  $('#byuse').innerHTML = use.map(u => `<div class="box usecol"><h3>${u.t}</h3><p>${u.d}</p><div class="gchips">${GEMS.filter(u.f).map(g => gchip(g)).join('')}</div></div>`).join('');
+  $('#swaps').innerHTML = `<thead><tr><th>${L('想要', 'You want')}</th><th>${L('可以考虑', 'Consider')}</th><th>${L('理由', 'Why')}</th></tr></thead><tbody>` +
+    SWAPS.map((s, i) => `<tr><td data-l="${L('想要', 'You want')}">${gchip(GEM[s.from])}</td><td data-l="${L('可以考虑', 'Consider')}"><div class="gchips">${s.to.map(id => gchip(GEM[id])).join('')}</div></td><td data-l="${L('理由', 'Why')}" style="font-size:13px;color:var(--muted)">${esc(L(s.why, SWAPS_WHY_EN[i]))}</td></tr>`).join('') +
+    `<tr><td colspan="3"><button class="linkbtn" data-preset="${SWAPS[0].from},${SWAPS[0].to.slice(0,2).join(',')}">${L('把“红宝石 vs 替代品”放进对比 →', 'Compare ruby with its alternatives →')}</button></td></tr></tbody>`;
+  $('#flags').innerHTML = (EN() ? RED_FLAGS_EN : RED_FLAGS).map(f => `<li>${esc(f)}</li>`).join('');
+  $('#traps').innerHTML = `<thead><tr><th>${L('听到的名字', 'What you hear')}</th><th>${L('实际是', 'What it really is')}</th><th>${L('说明', 'Note')}</th></tr></thead><tbody>` +
+    NAME_TRAPS.map((n, i) => { const e = EN() ? NAME_TRAPS_EN[i] : n;
+      return `<tr><td><b>${EN() ? esc(e.name) : `“${esc(e.name)}”`}</b></td><td data-l="${L('实际是', 'Really')}">${esc(e.real)}</td><td style="font-size:13px;color:var(--muted)">${esc(e.note)}</td></tr>`; }).join('') + `</tbody>`;
+  $('#labs').innerHTML = LABS.map((l, i) => { const e = EN() ? LABS_EN[i] : l; return `<div><b>${esc(l.n)}</b>${esc(e.full)}<br><small>${esc(e.note)}</small></div>`; }).join('');
+  $('#care').innerHTML = (EN() ? CARE_EN : CARE).map(c => `<div><b>${esc(c.lv)}</b>${esc(c.d)}</div>`).join('');
+}
+
+/* ================= 预算换算 ================= */
+const BUD_GEMS = GEMS.filter(g => PRICE_PER_CT[g.id]);
+const PX_MM = 3.5, MAX_PX = 156;
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+// 中文用人民币和一元硬币，英文用美元和 25 美分硬币
+const CUR = () => EN()
+  ? { sym: '$', rate: 1, min: 100, max: 150000, def: 700, coinMM: 24.26,
+      quick: [[200, '$200'], [700, '$700'], [3000, '$3k'], [7000, '$7k'], [30000, '$30k'], [150000, '$150k']] }
+  : { sym: '¥', rate: USD_CNY, min: 500, max: 1000000, def: 5000, coinMM: 25,
+      quick: [[1000, '¥1千'], [5000, '¥5千'], [20000, '¥2万'], [50000, '¥5万'], [200000, '¥20万'], [1000000, '¥100万']] };
+const ppcLocal = g => { const [a, b] = PRICE_PER_CT[g.id]; return Math.sqrt(a * b) * CUR().rate; };
+const sgOf = g => { const v = num(physOf(g).sg); return v > 0 ? v : 3; };
+// 1 克拉以内按每克拉价直接换算；更大的宝石每克拉更贵（价格约按克拉数的 1.4 次方增长）
+const caratsFor = (g, cash) => { const x = cash / ppcLocal(g); return x <= 1 ? x : Math.pow(x, 1 / 1.4); };
+// 圆形明亮式：1 克拉钻石直径约 6.5 mm，按比重换算体积
+const diameterFor = (g, ct) => 6.5 * Math.cbrt(ct * 3.52 / sgOf(g));
+const niceCash = c => c < 1000 ? Math.round(c / 10) * 10 : c < 10000 ? Math.round(c / 100) * 100 : c < 100000 ? Math.round(c / 1000) * 1000 : Math.round(c / 10000) * 10000;
+const toCash = v => { const C = CUR(); return niceCash(C.min * Math.pow(C.max / C.min, v / 1000)); };
+const toSlider = c => { const C = CUR(); return Math.round(1000 * Math.log(c / C.min) / Math.log(C.max / C.min)); };
+const fmtCash = c => CUR().sym + Math.round(c).toLocaleString(LOCALE());
+const fmtCt = ct => ct >= 100 ? '100+' : ct >= 10 ? ct.toFixed(1) : ct.toFixed(2);
+
+function budHex(g){
+  for (const k of state.budColors) if (g.colors.includes(k)) return g.colors[0] === k ? g.sig : COLOR[k].hex;
+  return g.sig;
+}
+
+function countUp(el, from, to, fmt, ms = 650){
+  if (REDUCED || from === to){ el.textContent = fmt(to); return; }
+  const t0 = performance.now(), token = (el._tok = (el._tok || 0) + 1);
+  const step = now => {
+    if (el._tok !== token) return;
+    const p = Math.min(1, (now - t0) / ms), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = fmt(from + (to - from) * e);
+    if (p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+  // 页面在后台时动画帧会暂停，保证最终一定显示正确数字
+  setTimeout(() => { if (el._tok === token) el.textContent = fmt(to); }, ms + 120);
+}
+
+function renderStack(){
+  const notes = Math.round(state.cash / 100);
+  const n = Math.min(22, Math.max(1, Math.round(Math.log2(Math.max(2, notes)) * 2.4)));
+  const h = $('#cash-stack').clientHeight || 130, stepY = Math.min(5, (h - 40) / n);
+  const face = CUR().sym + '100';
+  let html = '';
+  for (let i = 0; i < n; i++){
+    const rot = ((i * 37) % 7 - 3) * 0.8, dx = ((i * 53) % 9 - 4);
+    html += `<div class="bill" style="bottom:${i * stepY}px;transform:translateX(${dx}px) rotate(${rot}deg)">${face}</div>`;
+  }
+  $('#cash-stack').innerHTML = html;
+  const nf = v => v.toLocaleString(LOCALE());
+  $('#stack-lbl').textContent = EN()
+    ? (notes <= 300 ? `$100 × ${nf(notes)} bills` : `$${nf(state.cash / 1000)}k · ~${nf(Math.round(notes / 100))} bundles`)
+    : (notes <= 300 ? `100 元 × ${nf(notes)} 张` : `${nf(state.cash / 10000)} 万元 · 约 ${nf(Math.round(notes / 100))} 捆`);
+}
+
+function budgetList(){
+  const list = BUD_GEMS.filter(g => !state.budColors.size || g.colors.some(k => state.budColors.has(k)));
+  return state.budSort === 'size'
+    ? list.sort((a, b) => diameterFor(b, caratsFor(b, 10000)) - diameterFor(a, caratsFor(a, 10000)))
+    : list.sort((a, b) => ppcLocal(b) - ppcLocal(a));
+}
+
+function buildBudget(){
+  const C = CUR();
+  $('#cash-quick').innerHTML = C.quick.map(([v, l]) => `<button data-cash="${v}" aria-pressed="${state.cash === v}">${l}</button>`).join('');
+  $('#cash-colors').innerHTML = `<button class="all" data-bc="all" aria-pressed="${!state.budColors.size}">${L('全部', 'All')}</button>` +
+    COLORS.filter(c => BUD_GEMS.some(g => g.colors.includes(c.k))).map(c =>
+      `<button data-bc="${c.k}" aria-pressed="${state.budColors.has(c.k)}" style="background:${c.hex}" title="${colName(c.k)}" aria-label="${colName(c.k)}"></button>`).join('');
+  const grid = $('#bud-grid');
+  grid.style.setProperty('--coin', (C.coinMM * PX_MM).toFixed(1) + 'px');
+  grid.innerHTML = budgetList().map(g => {
+    const hex = budHex(g);
+    return `<article class="bcard" data-open="${g.id}" data-b="${g.id}" tabindex="0">
+      <div class="bvis tint" style="--h:${hex}"><span class="coin"></span><div class="bgem" style="width:0;height:0">${gemSVG(g, hex)}</div><span class="bigger" hidden>${L('实际更大 ↗', 'Actually bigger ↗')}</span></div>
+      <h3>${esc(gName(g))}</h3>
+      <div class="ctv"><span class="ctn">0</span><small>${L('克拉', 'ct')}</small></div>
+      <div class="sub"></div>
+    </article>`;
+  }).join('');
+}
+
+function updateBudget(animate){
+  const cash = state.cash;
+  const amt = $('#cash-amt');
+  if (animate) countUp(amt, amt._v || 0, cash, fmtCash); else amt.textContent = fmtCash(cash);
+  amt._v = cash;
+  $('#cash-range').value = toSlider(cash);
+  document.querySelectorAll('#cash-quick button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.cash === cash));
+  renderStack();
+
+  const results = [];
+  document.querySelectorAll('#bud-grid .bcard').forEach(card => {
+    const g = GEM[card.dataset.b], ct = caratsFor(g, cash), d = diameterFor(g, ct), px = d * PX_MM;
+    results.push({ g, ct });
+    const gem = card.querySelector('.bgem');
+    gem.style.width = gem.style.height = Math.max(3, Math.min(MAX_PX, px)) + 'px';
+    card.querySelector('.bigger').hidden = px <= MAX_PX;
+    const tiny = ct < 0.03;
+    card.classList.toggle('tiny', tiny);
+    const ctn = card.querySelector('.ctn');
+    if (tiny){ ctn._tok = (ctn._tok || 0) + 1; ctn.textContent = L('不到 0.03', '< 0.03'); }
+    else if (animate) countUp(ctn, card._ct || 0, ct, fmtCt);
+    else ctn.textContent = fmtCt(ct);
+    card._ct = ct;
+    const per = fmtCash(ppcLocal(g));
+    card.querySelector('.sub').textContent = tiny
+      ? L(`每克拉约 ${per}，这点预算只够碎石`, `~${per}/ct – only enough for a chip`)
+      : L(`直径约 ${d.toFixed(1)} mm · 每克拉约 ${per}`, `~${d.toFixed(1)} mm across · ~${per}/ct`);
+  });
+
+  if (results.length > 1){
+    const big = results.reduce((a, b) => b.ct > a.ct ? b : a), small = results.reduce((a, b) => b.ct < a.ct ? b : a);
+    $('#bud-note').textContent = L(`${small.g.zh} 约 ${fmtCt(small.ct)} 克拉，${big.g.zh} 可达 ${fmtCt(big.ct)} 克拉`,
+      `${small.g.en} ~${fmtCt(small.ct)} ct, ${big.g.en} up to ${fmtCt(big.ct)} ct`);
+  } else $('#bud-note').textContent = '';
+}
+
+// 钞票从钱堆飞进宝石卡片
+function flyCash(count, then){
+  const cards = [...document.querySelectorAll('#bud-grid .bcard')];
+  const vis = cards.filter(c => { const r = c.getBoundingClientRect(); return r.top < innerHeight - 40 && r.bottom > 60; });
+  const pop = () => { cards.forEach((c, i) => setTimeout(() => { c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); }, Math.min(i, 12) * 40)); then && then(); };
+  if (REDUCED){ pop(); return; }
+  const from = $('#cash-stack').getBoundingClientRect();
+  const sx = from.left + 18, sy = from.top + from.height - 50;
+  const targets = vis.length ? vis.map(c => c.querySelector('.bvis').getBoundingClientRect())
+    : [{ left: innerWidth * .25, top: innerHeight + 20, width: 0, height: 0 }, { left: innerWidth * .7, top: innerHeight + 20, width: 0, height: 0 }];
+  let done = 0;
+  const n = Math.min(count, 14);
+  for (let i = 0; i < n; i++){
+    const t = targets[i % targets.length];
+    const tx = t.left + t.width / 2 - 42 - sx, ty = t.top + t.height / 2 - 19 - sy;
+    const b = document.createElement('div');
+    b.className = 'bill fly'; b.textContent = CUR().sym + '100';
+    document.body.appendChild(b);
+    const rot = (i % 2 ? 1 : -1) * (180 + i * 25);
+    const anim = b.animate([
+      { transform: `translate(${sx}px,${sy}px) rotate(0deg) scale(1)`, opacity: 1 },
+      { transform: `translate(${sx + tx * .5}px,${sy + ty * .5 - 90}px) rotate(${rot / 2}deg) scale(.9)`, opacity: 1, offset: .5 },
+      { transform: `translate(${sx + tx}px,${sy + ty}px) rotate(${rot}deg) scale(.25)`, opacity: 0 }
+    ], { duration: 750, delay: i * 55, easing: 'cubic-bezier(.4,0,.6,1)', fill: 'both' });
+    anim.onfinish = () => { b.remove(); if (++done === n) pop(); };
+  }
+}
+
+function setCash(v, fly){
+  state.cash = v;
+  updateBudget(true);
+  if (fly) flyCash(8);
+}
+
+function renderBudget(){
+  if (state.cash == null) state.cash = CUR().def;
+  buildBudget();
+  $('#cash-amt')._v = 0;
+  growBudget();
+  setTimeout(() => flyCash(10), 150);
+}
+
+// 先画出 0 大小，强制排版一次，再设成目标大小，宝石就会“长出来”
+function growBudget(){
+  void $('#bud-grid').offsetWidth;
+  updateBudget(true);
+}
+
+/* ================= 玩一玩 ================= */
+const shuffle = a => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+
+// 宝石揭晓时的闪光
+function burst(el, n = 18){
+  if (REDUCED || !el) return;
+  const r = el.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+  for (let i = 0; i < n; i++){
+    const s = document.createElement('span');
+    s.className = 'spark'; s.textContent = i % 3 ? '✦' : '✧';
+    s.style.left = cx + 'px'; s.style.top = cy + 'px';
+    document.body.appendChild(s);
+    const a = (i / n) * Math.PI * 2 + Math.random() * .4, d = 70 + Math.random() * 90;
+    s.animate([
+      { transform: 'translate(-50%,-50%) scale(.3)', opacity: 1 },
+      { transform: `translate(calc(-50% + ${Math.cos(a) * d}px),calc(-50% + ${Math.sin(a) * d}px)) scale(${.8 + Math.random()}) rotate(120deg)`, opacity: 0 }
+    ], { duration: 900 + Math.random() * 400, easing: 'cubic-bezier(.2,.7,.4,1)', delay: 150 }).onfinish = () => s.remove();
+    setTimeout(() => s.remove(), 2000);
+  }
+}
+
+/* ----- 5 题选宝石 ----- */
+const QUIZ = () => [
+  { k: 'color', q: L('你最想要什么颜色？', 'Which colour do you want most?'), type: 'color' },
+  { k: 'wear', q: L('打算怎么戴？', 'How will you wear it?'), opts: [
+    ['daily', '💍', L('每天戴的戒指', 'A ring worn every day'), L('需要耐磨、耐撞', 'Needs to resist scratches and knocks')],
+    ['some', '✨', L('偶尔戴', 'Now and then'), L('约会、聚会、重要场合', 'Dates, parties, special occasions')],
+    ['pendant', '📿', L('吊坠、耳饰、项链', 'Pendant, earrings, necklace'), L('不太会磕碰', 'Rarely gets knocked')]] },
+  { k: 'budget', q: L('每克拉预算大概多少？', 'Roughly what budget per carat?'), opts: [
+    [1, '🌱', L('入门', 'Entry'), L('每克拉 ¥700 以内', 'Under $100 per carat')],
+    [2, '🌿', L('中等', 'Mid'), L('每克拉 ¥700–7,000', '$100–1,000 per carat')],
+    [3, '🌳', L('较高', 'High'), L('每克拉 ¥7,000–3.6 万', '$1,000–5,000 per carat')],
+    [4, '👑', L('不设上限', 'No limit'), L('只要喜欢', 'If I love it')]] },
+  { k: 'treat', q: L('你对“处理”的态度是？', 'How do you feel about treatments?'), opts: [
+    [0, '🌿', L('只要天然原色', 'Natural colour only'), L('不接受任何处理', 'No treatments at all')],
+    [1, '🔥', L('常规处理可以', 'Routine is fine'), L('比如加热，行业普遍接受', 'e.g. heating, widely accepted')],
+    [2, '🙆', L('都可以', 'Anything goes'), L('好看、价格合适就行', 'As long as it looks good and the price is right')]] },
+  { k: 'style', q: L('你更喜欢哪种感觉？', 'Which look do you prefer?'), opts: [
+    ['sparkle', '💎', L('闪亮、火彩强', 'Sparkly, lots of fire'), L('一动就闪', 'Flashes with every move')],
+    ['soft', '🫧', L('温润、柔和', 'Soft and smooth'), L('玉石、素面、珍珠', 'Jade, cabochons, pearls')],
+    ['special', '🌈', L('有特殊光学效果', 'Special optical effects'), L('变色、猫眼、月光、变彩', 'Colour change, cat’s-eye, moonglow, play-of-colour')],
+    ['classic', '🏛️', L('经典名贵', 'Classic and precious'), L('大家都认识的那几种', 'The ones everybody knows')]] }
+];
+const SPECIAL_FX = { alexandrite: ['变色效应', 'colour change'], chrysoberyl: ['猫眼效应', 'a cat’s-eye'], moonstone: ['月光效应', 'a moonlight glow'], opal: ['变彩效应', 'play-of-colour'], tourmaline: ['双色“西瓜碧玺”', 'two-tone “watermelon” stones'], 'red-garnet': ['星光效应（少见）', 'stars (rare)'] };
+const CLASSIC = ['diamond', 'ruby', 'sapphire', 'emerald', 'jadeite', 'pearl'];
+const FIRE = ['diamond', 'lab-diamond', 'moissanite', 'zircon', 'demantoid'];
+
+function quizScore(g, a){
+  let s = 0; const why = [];
+  if (a.color && a.color !== 'any'){
+    if (g.colors.includes(a.color)){ s += 3; why.push(L(`有你喜欢的${COLOR[a.color].zh}色`, `Comes in the ${COLOR[a.color].en.toLowerCase()} you like`)); } else s -= 6;
+  }
+  if (a.wear === 'daily'){ if (g.dur >= 4){ s += 2; why.push(L(`耐久度 ${g.dur}/5，可以天天戴`, `Durability ${g.dur}/5 – fine for daily wear`)); } else s -= g.dur === 3 ? 2 : 5; }
+  if (a.wear === 'some'){ if (g.dur >= 3){ s += 1; why.push(L(`耐久度 ${g.dur}/5，偶尔佩戴没问题`, `Durability ${g.dur}/5 – fine for occasional wear`)); } else s -= 1; }
+  if (a.wear === 'pendant'){ s += 1; if (g.dur <= 2) why.push(L('娇贵但美丽，正适合吊坠耳饰', 'Delicate but beautiful – perfect for pendants and earrings')); }
+  if (g.price <= a.budget){ s += 2; why.push(L(`价格在预算内（${PRICE_TIERS[g.price].zh}档）`, `Within budget (${PRICE_TIERS_EN[g.price].toLowerCase()} tier)`)); } else s -= 3 * (g.price - a.budget);
+  if (a.treat === 0){ if (g.treat === 0){ s += 2; why.push(L('通常无处理，是天然原色', 'Usually untreated – natural colour')); } else s -= g.treat * 2.5; }
+  if (a.treat === 1){ if (g.treat <= 1) s += 1; else s -= 3; }
+  if (a.style === 'sparkle'){
+    if (g.cuts[0] === 'facet' && (FIRE.includes(g.id) || num(physOf(g).ri) >= 1.7)){ s += 3; why.push(L('折射率高，亮度和火彩出色', 'High refractive index – great brilliance and fire')); }
+    else if (g.cuts[0] === 'facet') s += 1;
+  }
+  if (a.style === 'soft' && g.cuts[0] !== 'facet'){ s += 3; why.push(L('质感温润柔和', 'Soft, smooth texture')); }
+  if (a.style === 'special' && SPECIAL_FX[g.id]){ s += 3; why.push(L(`有${SPECIAL_FX[g.id][0]}`, `Shows ${SPECIAL_FX[g.id][1]}`)); }
+  if (a.style === 'classic' && CLASSIC.includes(g.id)){ s += 3; why.push(L('经典名贵，人人都认识', 'A classic everyone recognises')); }
+  if (!g.natural) s -= .5;
+  s += valueScore(g) * .15;
+  // 满分约 13.6（5 项全中 + 性价比加分）
+  return { g, s, why, pct: Math.max(40, Math.min(99, Math.round(40 + s / 13.6 * 59))) };
+}
+
+function renderQuiz(){
+  const q = state.quiz, body = $('#play-body'), QZ = QUIZ();
+  if (q.step >= QZ.length){ renderQuizResult(); return; }
+  const Q = QZ[q.step];
+  const opts = Q.type === 'color'
+    ? `<div class="qcolors">${COLORS.map(c => `<button data-qa="color" data-v="${c.k}" style="background:${c.hex}" aria-label="${colName(c.k)}"><span>${colName(c.k)}</span></button>`).join('')}</div>
+       <div class="qopts"><button class="qopt" data-qa="color" data-v="any"><span class="ic">🌈</span><span>${L('颜色都可以', 'Any colour')}<small>${L('让我看看有哪些选择', 'Show me what’s out there')}</small></span></button></div>`
+    : `<div class="qopts">${Q.opts.map(([v, ic, l, d]) => `<button class="qopt" data-qa="${Q.k}" data-v="${v}"><span class="ic">${ic}</span><span>${l}<small>${d}</small></span></button>`).join('')}</div>`;
+  body.innerHTML = `<div class="play-card">
+    <div class="pbar"><i style="width:${q.step / QZ.length * 100}%"></i></div>
+    <div class="qhead"><span>${L(`第 ${q.step + 1} / ${QZ.length} 题`, `Question ${q.step + 1} / ${QZ.length}`)}</span></div>
+    <h2 class="qtitle slide-in">${Q.q}</h2>
+    <div class="slide-in">${opts}</div>
+    <div class="qnav">${q.step ? `<button class="linkbtn" data-qback>${L('← 上一题', '← Back')}</button>` : '<span></span>'}</div>
+  </div>`;
+}
+
+function renderQuizResult(){
+  const a = state.quiz.ans;
+  const ranked = GEMS.map(g => quizScore(g, a)).sort((x, y) => y.s - x.s);
+  const [top, ...rest] = ranked;
+  const pick = g => a.color && a.color !== 'any' && g.colors.includes(a.color) && g.colors[0] !== a.color ? COLOR[a.color].hex : g.sig;
+  const ids = ranked.slice(0, 3).map(r => r.g.id).join(',');
+  $('#play-body').innerHTML = `<div class="play-card reveal">
+    <div class="eyebrow">${L('你的本命宝石', 'Your gem is')}</div>
+    <div class="hero-gem" id="hero-gem">${gemSVG(top.g, pick(top.g))}</div>
+    <h2>${esc(gName(top.g))}</h2>
+    <div style="color:var(--muted);font-size:13px">${esc(gAlt(top.g))} · ${esc(gf(top.g, 'line'))}</div>
+    <span class="pct">${L('匹配度', 'Match')} ${top.pct}%</span>
+    <ul>${top.why.slice(0, 4).map(w => `<li>${esc(w)}</li>`).join('') || `<li>${L('综合价格、耐久度和处理情况最均衡', 'The best balance of price, durability and treatment')}</li>`}</ul>
+    <div style="margin-top:22px;font-size:13px;color:var(--muted)">${L('也很适合你', 'Also a great fit')}</div>
+    <div class="runners">${rest.slice(0, 2).map(r => `<button class="runner" data-open="${r.g.id}">${gemSVG(r.g, pick(r.g))}<span><b>${esc(gName(r.g))}</b><small>${L('匹配度', 'Match')} ${r.pct}% · ${esc(r.why[0] || gf(r.g, 'line'))}</small></span></button>`).join('')}</div>
+    <div class="btnrow">
+      <button class="primary" data-open="${top.g.id}">${L(`了解${esc(top.g.zh)}`, `About ${esc(top.g.en)}`)}</button>
+      <button class="secondary" data-preset="${ids}">${L('三个一起对比', 'Compare all three')}</button>
+      <button class="secondary" data-qreset>${L('重新测一次', 'Start over')}</button>
+    </div>
+  </div>`;
+  setTimeout(() => burst($('#hero-gem'), 22), 350);
+}
+
+/* ----- 火眼金睛 ----- */
+const SPOT = [
+  { ask: 'diamond', opts: ['g:diamond', 'g:moissanite', 'x:A-5'],
+    tip: ['钻石折射率 2.42、单折射；莫桑石是双折射，从台面斜看棱线会成双；立方氧化锆比重约 5.8，比钻石重得多。', 'Diamond has RI 2.42 and is singly refractive; moissanite is doubly refractive, so facet edges look doubled; cubic zirconia has SG ~5.8 – much heavier than diamond.'] },
+  { ask: 'ruby', opts: ['g:ruby', 'g:spinel', 'g:red-garnet'],
+    tip: ['红宝石（刚玉）是双折射，折射率约 1.76–1.77；尖晶石和石榴石都是单折射。', 'Ruby (corundum) is doubly refractive with RI ~1.76–1.77; spinel and garnet are both singly refractive.'] },
+  { ask: 'emerald', opts: ['g:emerald', 'g:tsavorite', 'x:A-61'],
+    tip: ['祖母绿折射率约 1.57、双折射；沙弗莱石单折射、折射率约 1.74；玻璃单折射，放大常见气泡。', 'Emerald has RI ~1.57 and is doubly refractive; tsavorite is singly refractive with RI ~1.74; glass is singly refractive and often shows gas bubbles.'] },
+  { ask: 'sapphire', opts: ['g:sapphire', 'g:tanzanite', 'g:iolite'],
+    tip: ['蓝宝石硬度 9、折射率约 1.76；坦桑石硬度只有 6–7；堇青石折射率约 1.54，比重也最低。', 'Sapphire has hardness 9 and RI ~1.76; tanzanite is only 6–7; iolite has RI ~1.54 and the lowest SG.'] },
+  { ask: 'jadeite', opts: ['g:jadeite', 'g:nephrite', 'x:A-49'],
+    tip: ['翡翠折射率约 1.66、比重约 3.34；和田玉约 1.61、2.95；玉髓（石英类）约 1.54、2.60，掂起来最轻。', 'Jadeite: RI ~1.66, SG ~3.34; nephrite ~1.61, 2.95; chalcedony (quartz) ~1.54, 2.60 – it feels lightest in the hand.'] },
+  { ask: 'aquamarine', opts: ['g:aquamarine', 'g:topaz', 'x:A-21'],
+    tip: ['海蓝宝石折射率约 1.57、比重约 2.72；托帕石约 1.62、3.53，明显更重；合成尖晶石单折射、约 1.73。', 'Aquamarine: RI ~1.57, SG ~2.72; topaz ~1.62, 3.53 – noticeably heavier; synthetic spinel is singly refractive, ~1.73.'] },
+  { ask: 'amethyst', opts: ['g:amethyst', 'x:A-63', 'x:A-61'],
+    tip: ['紫晶（石英）双折射、硬度 7；萤石单折射、硬度只有 4；玻璃单折射、硬度约 5–6。', 'Amethyst (quartz) is doubly refractive with hardness 7; fluorite is singly refractive at only 4; glass is singly refractive at about 5–6.'] }
+];
+
+function entityOf(key){
+  const [t, id] = [key.slice(0, 1), key.slice(2)];
+  if (t === 'g'){ const g = GEM[id], p = physOf(g); return { name: gName(g), shape: g, hex: g.sig, ri: p.ri, sg: p.sg, optic: xf(p, 'optic'), hard: g.hard }; }
+  const r = ROW_ALL[id], look = extraLook(r);
+  return { name: xName(r), shape: look.shape, hex: look.hex, ri: xf(r, 'ri'), sg: r.sg, optic: xf(r, 'optic'), hard: r.hard };
+}
+
+// 题目只存“是什么”，文字在显示时按当前语言生成，切换语言不影响进行中的游戏
+function makeRound(){
+  const spot = shuffle(SPOT).slice(0, 3).map(s => ({ type: 'spot', spot: s, opts: shuffle(s.opts), answer: 'g:' + s.ask }));
+  const trap = shuffle(NAME_TRAPS.map((_, i) => i)).slice(0, 2).map(i => {
+    const others = shuffle(NAME_TRAPS.map((_, j) => j).filter(j => j !== i && NAME_TRAPS[j].real !== NAME_TRAPS[i].real)).slice(0, 2);
+    return { type: 'trap', i, opts: shuffle([i, ...others]).map(String), answer: String(i) };
+  });
+  const treat = shuffle(GEMS.filter(g => g.t.length)).slice(0, 2).map(g => {
+    const k = g.t[0], others = shuffle(TREATMENT_ORDER.filter(x => !g.t.includes(x) && !g.t2.includes(x))).slice(0, 2);
+    return { type: 'treat', gem: g.id, opts: shuffle([k, ...others]), answer: k };
+  });
+  const tough = shuffle(GEMS.filter(g => g.dur === 5 && g.natural))[0];
+  const soft = shuffle(GEMS.filter(g => g.dur <= 2)).slice(0, 2);
+  const dur = { type: 'dur', opts: shuffle([tough, ...soft].map(g => g.id)), answer: tough.id };
+  return shuffle([...spot, ...trap, ...treat, dur]);
+}
+
+function qText(Q){
+  const trap = i => EN() ? NAME_TRAPS_EN[i] : NAME_TRAPS[i];
+  switch (Q.type){
+    case 'spot': return { title: L(`哪一颗是真正的「${GEM[Q.spot.ask].zh}」？`, `Which one is the real ${GEM[Q.spot.ask].en.toLowerCase()}?`),
+      sub: L('看看折射率、光性、比重和硬度这些线索', 'Use the clues: refractive index, optic character, specific gravity and hardness'), tip: L(Q.spot.tip[0], Q.spot.tip[1]) };
+    case 'trap': return { title: L(`商家说的“${NAME_TRAPS[Q.i].name}”，实际是什么？`, `A seller says “${trap(Q.i).name}”. What is it really?`),
+      label: v => trap(+v).real, tip: trap(Q.i).note };
+    case 'treat': { const g = GEM[Q.gem]; return { title: L(`市场上的${g.zh}，最常见的处理是？`, `What’s the most common treatment for ${g.en.toLowerCase()} on the market?`),
+      label: k => `${TREATMENTS[k].icon} ${trName(k)}`, tip: trf(Q.answer, 'why') }; }
+    default: { const gs = Q.opts.map(id => GEM[id]); return { title: L('哪一颗最适合做每天戴的戒指？', 'Which is best for a ring worn every day?'),
+      tip: gs.map(g => L(`${g.zh} 耐久度 ${g.dur}/5`, `${g.en} durability ${g.dur}/5`)).join(L('；', '; ')) + L('。每天戴的戒指最好选耐久度 4–5 的宝石。', '. For an everyday ring, choose durability 4–5.') }; }
+  }
+}
+
+function renderGame(){
+  const body = $('#play-body'), G = state.game;
+  if (!G){
+    body.innerHTML = `<div class="play-card reveal">
+      <div style="font-size:56px">🕵️</div><h2>${L('火眼金睛挑战', 'Gem Detective')}</h2>
+      <p style="color:var(--muted);max-width:460px;margin:8px auto 0">${L('8 道题：根据鉴定线索认出真宝石、识破名称陷阱、了解常见处理。答对一题得 1 分，连续答对有 🔥 连击。', '8 questions: spot the real gem from lab clues, see through name traps and learn common treatments. 1 point per correct answer, with 🔥 streaks for answers in a row.')}</p>
+      <div class="btnrow"><button class="primary" data-gstart>${L('开始挑战', 'Start')}</button></div></div>`;
+    return;
+  }
+  if (G.i >= G.qs.length){ renderGameEnd(); return; }
+  const Q = G.qs[G.i], T = qText(Q), done = G.picked != null, ok = done && G.picked === Q.answer;
+  const mark = v => !done ? '' : v === Q.answer ? 'right' : v === G.picked ? 'wrong' : '';
+  let opts;
+  if (Q.type === 'spot'){
+    opts = `<div class="clues">${Q.opts.map((k, i) => { const e = entityOf(k);
+      return `<button class="clue ${mark(k)} ${done ? 'shown' : ''}" data-gpick="${k}" ${done ? 'disabled' : ''}>
+        <div class="lt">${'ABC'[i]}${done && k === Q.answer ? ' ✓' : ''}</div>
+        <dl><dt>${L('折射率', 'RI')}</dt><dd>${esc(e.ri || '—')}</dd><dt>${L('光性', 'Optic')}</dt><dd>${esc(e.optic || '—')}</dd><dt>${L('比重', 'SG')}</dt><dd>${esc(e.sg || '—')}</dd><dt>${L('硬度', 'Hardness')}</dt><dd>${esc(e.hard)}</dd></dl>
+        <div class="who">${gemSVG(e.shape, e.hex)}${esc(e.name)}</div></button>`; }).join('')}</div>`;
+  } else if (Q.type === 'dur'){
+    opts = `<div class="qopts">${Q.opts.map(id => { const g = GEM[id];
+      return `<button class="qopt ${mark(id)}" data-gpick="${id}" ${done ? 'disabled' : ''}><span style="width:40px;height:40px;flex:none">${gemSVG(g, g.sig)}</span><span>${esc(gName(g))}${done ? `<small>${L('耐久度', 'Durability')} ${g.dur}/5</small>` : ''}</span></button>`; }).join('')}</div>`;
+  } else {
+    opts = `<div class="qopts">${Q.opts.map(v => `<button class="qopt ${mark(v)}" data-gpick="${esc(v)}" ${done ? 'disabled' : ''}><span>${esc(T.label(v))}</span></button>`).join('')}</div>`;
+  }
+  body.innerHTML = `<div class="play-card">
+    <div class="pbar"><i style="width:${(G.i + (done ? 1 : 0)) / G.qs.length * 100}%"></i></div>
+    <div class="qhead"><span>${L(`第 ${G.i + 1} / ${G.qs.length} 题`, `Question ${G.i + 1} / ${G.qs.length}`)}</span><span>${L('得分', 'Score')} <b>${G.score}</b>${G.streak >= 2 ? ` · 🔥 ${L('连对', 'streak')} ${G.streak}` : ''}</span></div>
+    <h2 class="qtitle ${done ? '' : 'slide-in'}" style="margin-bottom:${T.sub ? 4 : 18}px">${esc(T.title)}</h2>
+    ${T.sub ? `<p style="color:var(--muted);font-size:13px;margin:0 0 16px">${T.sub}</p>` : ''}
+    <div class="${done ? '' : 'slide-in'}">${opts}</div>
+    ${done ? `<div class="explain"><b>${ok ? L('✅ 答对了！', '✅ Correct!') : L('❌ 差一点', '❌ Not quite')}</b>${esc(T.tip)}</div>
+      <div class="btnrow" style="justify-content:flex-end"><button class="primary" data-gnext>${G.i + 1 < G.qs.length ? L('下一题 →', 'Next →') : L('看结果 🎉', 'See results 🎉')}</button></div>` : ''}
+  </div>`;
+}
+
+function renderGameEnd(){
+  const G = state.game, n = G.qs.length, s = G.score;
+  const [emoji, title, msg] = s === n ? ['💎', L('宝石专家', 'Gem Expert'), L('全对！你已经可以帮朋友把关了。', 'Perfect score! You can now vet gems for your friends.')]
+    : s >= n - 2 ? ['🕵️', L('火眼金睛', 'Gem Detective'), L('很厉害，大部分陷阱都躲开了。', 'Impressive – you dodged most of the traps.')]
+    : s >= n / 2 ? ['🔍', L('入门玩家', 'Apprentice'), L('基础不错，再看看处理指南会更稳。', 'A solid start – the treatment guide will make you even safer.')]
+    : ['🌱', L('宝石小白', 'Beginner'), L('没关系，先逛逛百科和处理指南，再来挑战。', 'No worries – browse the encyclopedia and treatment guide, then try again.')];
+  $('#play-body').innerHTML = `<div class="play-card reveal">
+    <div style="font-size:56px" id="end-emoji">${emoji}</div>
+    <div class="eyebrow" style="margin-top:6px">${L('你的称号', 'Your title')}</div>
+    <h2>${title}</h2>
+    <div class="score-big">${s}<small> / ${n}</small></div>
+    <p style="color:var(--muted)">${msg}${G.best >= 3 ? L(` 最高连对 🔥 ${G.best} 题。`, ` Best streak 🔥 ${G.best}.`) : ''}</p>
+    <div class="btnrow">
+      <button class="primary" data-gstart>${L('再玩一次', 'Play again')}</button>
+      <a class="secondary" href="#treatments" style="text-decoration:none">${L('去处理指南', 'Treatment guide')}</a>
+      <a class="secondary" href="#encyclopedia" style="text-decoration:none">${L('去宝石百科', 'Encyclopedia')}</a>
+    </div></div>`;
+  if (s >= n - 2) setTimeout(() => burst($('#end-emoji'), 24), 200);
+}
+
+function renderPlay(){
+  document.querySelectorAll('.play-tabs button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === state.playMode));
+  state.playMode === 'quiz' ? renderQuiz() : renderGame();
+}
+
+/* ================= 详情面板 ================= */
+function alternatives(g){
+  const keys = state.colors.size ? [...state.colors].filter(k => g.colors.includes(k)) : g.colors.slice(0,1);
+  const useKeys = keys.length ? keys : g.colors;
+  return GEMS.filter(o => o.id !== g.id && o.colors.some(k => useKeys.includes(k)))
+    .sort((a,b) => valueScore(b) - valueScore(a)).slice(0,4);
+}
+
+function showDrawer(html){
+  $('#drawer').innerHTML = html;
+  $('#drawer').scrollTop = 0;
+  $('#drawer').classList.add('show');
+  $('#overlay').classList.add('show');
+  $('#drawer .close').focus();
+}
+
+// 小节标题：中文模式附带英文小字，英文模式只显示英文
+const sh = (zh, en) => EN() ? en : `${zh} <span class="k">${en}</span>`;
+const altBtn = o => `<button class="alt" data-open="${o.id}">${gemSVG(o, displayHex(o))}<span>${esc(gName(o))}<small>${'$'.repeat(o.price)} · ${L('耐久', 'durability')} ${o.dur}/5</small></span></button>`;
+
+function physHTML(p){
+  const rows = [[L('折射率 RI', 'Refractive index'), xf(p, 'ri')], [L('双折射率', 'Birefringence'), p.biref], [L('比重 SG', 'Specific gravity'), p.sg],
+    [L('光性', 'Optic character'), xf(p, 'optic')], [L('晶系', 'Crystal system'), xf(p, 'system')], [L('透明度', 'Transparency'), xf(p, 'trans')]].filter(r => r[1]);
+  return rows.length ? `<dl class="phys">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : '';
+}
+
+function openDrawer(id){
+  const g = GEM[id]; if (!g) return;
+  state.open = id; state.openX = null;
+  const hex = displayHex(g), inCmp = state.compare.includes(id);
+  const full = !inCmp && state.compare.length >= MAX_CMP;
+  const gia = GIA_BY_GEM[g.id] || [];
+  const list = f => gf(g, f).map(x => `<li>${esc(x)}</li>`).join('');
+  showDrawer(`
+    <div class="dhead tint" style="--h:${hex};--card:var(--bg)">
+      ${gemSVG(g, hex)}
+      <div>
+        <h2 id="d-title">${esc(gName(g))}<small>${esc(gAlt(g))} · ${esc(famName(g.family))}${g.natural ? '' : L(' · 实验室宝石', ' · lab-created')}</small></h2>
+        <div style="margin-top:8px">${dotsHTML(g.colors)}</div>
+      </div>
+      <button class="close" data-close aria-label="${L('关闭', 'Close')}">✕</button>
+    </div>
+    <div class="dbody">
+      <div class="facts">
+        <div><span>${L('价格档位', 'Price tier')}</span><b>${tierName(g.price)}</b></div>
+        <div><span>${L('摩氏硬度', 'Mohs hardness')}</span><b>${esc(g.hard)}</b></div>
+        <div><span>${L('耐久度', 'Durability')}</span><b>${g.dur} / 5</b></div>
+      </div>
+      <section class="dsec"><h4>${sh('简介', 'Overview')}</h4><p>${esc(gf(g, 'intro'))}</p></section>
+      <section class="dsec pc">
+        <div class="p"><h4>${L('优点', 'Pros')}</h4><ul>${list('pros')}</ul></div>
+        <div class="c"><h4>${L('缺点', 'Cons')}</h4><ul>${list('cons')}</ul></div>
+      </section>
+      <section class="dsec"><h4>${sh('价格参考', 'Price')}</h4><p>${esc(gf(g, 'priceText'))}</p></section>
+      <section class="dsec"><h4>${L('处理方式', 'Treatments')} ${treatHTML(g.treat)}</h4>
+        <div class="gchips">${g.t.map(k => tchip(k)).join('')}${g.t2.map(k => tchip(k, true)).join('')}${!g.t.length && !g.t2.length ? `<span class="tag ok">${tlName(0)}</span>` : ''}</div>
+        ${g.t.length || g.t2.length ? `<div class="sub">${L('实线：市场上常见　虚线：偶尔会遇到　点击查看处理说明', 'Solid: common on the market · Dashed: occasional · Tap for details')}</div>` : ''}
+        <ul style="margin-top:8px">${list('treatments')}</ul></section>
+      <section class="dsec"><h4>${sh('购买时问卖家', 'Ask the seller')}</h4><ul class="ask">${list('ask')}</ul></section>
+      <section class="dsec"><h4>${sh('品质怎么看', 'Judging quality')}</h4><ul>${list('quality')}</ul></section>
+      <section class="dsec"><h4>⚠ ${sh('小心别买错', 'Lookalikes')}</h4><ul>${list('confuse')}</ul></section>
+      <section class="dsec"><h4>${sh('适合怎么戴', 'Wear')}</h4><p>${barHTML(g.dur)} <span class="bar-txt">${durLabel(g.dur)}</span></p><p style="margin-top:6px">${esc(gf(g, 'use'))}</p>
+        <div class="sub">${L('常见切工：', 'Usual cuts: ')}${g.cuts.map(cutName).join(SEP())}</div></section>
+      <section class="dsec"><h4>${sh('内含物与鉴定特征', 'Inclusions')}</h4><p>${esc(gf(g, 'incl'))}</p>
+        ${gf(g, 'fx') ? `<div class="sub">${L('光学效应', 'Optical effects')}</div><p>${esc(gf(g, 'fx'))}</p>` : ''}</section>
+      <section class="dsec"><h4>${sh('物理性质', 'Properties')}</h4>${physHTML(physOf(g)) || '<p>—</p>'}
+        ${gia.map(r => `<div class="sub">${L(`GIA 图表：${esc(r.zh)}（${esc(r.en)}）`, `GIA chart: ${esc(r.en)}`)}${xf(r, 'phen') ? ' · ' + esc(xf(r, 'phen')) : ''}</div>${xf(r, 'comment') ? `<p style="font-size:13px">${esc(xf(r, 'comment'))}</p>` : ''}`).join('')}</section>
+      <section class="dsec"><h4>${L('同色的其他选择', 'Other gems in this colour')}</h4><div class="alts">${alternatives(g).map(altBtn).join('')}</div></section>
+    </div>
+    <div class="dfoot">
+      <button class="primary" data-cmp="${g.id}" ${full ? 'disabled' : ''}>${inCmp ? L('✓ 已加入对比（点击移除）', '✓ In compare (tap to remove)') : full ? L('对比已满 3 个', 'Compare is full (3)') : L('＋ 加入对比', '+ Add to compare')}</button>
+      ${state.compare.length >= 2 && state.page !== 'compare' ? `<a class="secondary" href="#compare" style="text-decoration:none">${L('去对比 →', 'Compare →')}</a>` : ''}
+    </div>`);
+}
+
+function openExtra(id){
+  const r = XROW[id]; if (!r) return;
+  state.open = null; state.openX = id;
+  const { hex, shape } = extraLook(r);
+  const sameColor = GEMS.filter(g => g.colors.some(k => r.colors.includes(k))).sort((a, b) => valueScore(b) - valueScore(a)).slice(0, 4);
+  showDrawer(`
+    <div class="dhead tint" style="--h:${hex};--card:var(--bg)">
+      ${gemSVG(shape, hex)}
+      <div>
+        <h2 id="d-title">${esc(xName(r))}<small>${xAlt(r) ? esc(xAlt(r)) + ' · ' : ''}${grpName(r.group)}</small></h2>
+        <div style="margin-top:8px">${dotsHTML(r.colors)}</div>
+      </div>
+      <button class="close" data-close aria-label="${L('关闭', 'Close')}">✕</button>
+    </div>
+    <div class="dbody">
+      ${r.protected ? `<div class="note warn">${L('国际公约（CITES）保护物种，多数国家和地区禁止买卖。请不要购买。', 'Protected under CITES – trade is banned in most countries. Please don’t buy it.')}</div>` : ''}
+      <div class="note${r.group === 'synthetic' ? ' warn' : ''}">${grpNote(r.group)}${r.group === 'synthetic' ? ` <a href="#treatments">${L('了解合成与仿制 →', 'About synthetics and imitations →')}</a>` : ''}</div>
+      <div class="facts">
+        <div><span>${L('摩氏硬度', 'Mohs hardness')}</span><b>${esc(r.hard)}</b></div>
+        <div><span>${L('透明度', 'Transparency')}</span><b>${esc(xf(r, 'trans'))}</b></div>
+        <div><span>${L('估算耐久', 'Est. durability')}</span><b>${r.dur ? r.dur + ' / 5' : '—'}</b></div>
+      </div>
+      ${xf(r, 'phen') ? `<section class="dsec"><h4>${sh('光学效应与外观', 'Phenomena')}</h4><p>${esc(xf(r, 'phen'))}</p></section>` : ''}
+      <section class="dsec"><h4>${sh('物理性质', 'Properties')}</h4>${physHTML(r) || '<p>—</p>'}</section>
+      ${xf(r, 'comment') ? `<section class="dsec"><h4>${sh('鉴定特征（GIA 图表备注）', 'GIA chart comments')}</h4><p>${esc(xf(r, 'comment'))}</p></section>` : ''}
+      ${r.protected ? '' : `<section class="dsec"><h4>${L('适合怎么戴', 'Wear')}</h4><p>${r.dur ? barHTML(r.dur) + ` <span class="bar-txt">${durLabel(r.dur)}</span>` : L('取决于拼合的材料', 'Depends on the materials used')}</p>
+        <p style="margin-top:6px;font-size:13px;color:var(--muted)">${L('只按硬度估算，没有考虑韧性和解理，仅供参考。', 'Estimated from hardness only, without toughness or cleavage – a rough guide.')}</p></section>`}
+      ${sameColor.length ? `<section class="dsec"><h4>${L('同色、更容易买到的宝石', 'Easier-to-buy gems in the same colour')}</h4><div class="alts">${sameColor.map(altBtn).join('')}</div></section>` : ''}
+    </div>`);
+}
+
+function closeDrawer(){
+  state.open = null; state.openX = null;
+  $('#drawer').classList.remove('show');
+  $('#overlay').classList.remove('show');
+}
+
+/* ================= 路由 ================= */
+const RENDER = { explore: renderExplore, encyclopedia: renderEncyclopedia, budget: renderBudget, play: renderPlay, compare: renderCompare, treatments: renderTreatments, buying: renderBuying };
+const rendered = new Set();
+
+function refresh(){
+  RENDER[state.page]();
+  renderTray();
+}
+
+function route(){
+  const [p, sub] = (location.hash.slice(1) || 'explore').split('/');
+  const page = PAGES.includes(p) ? p : 'explore';
+  const changed = page !== state.page || !rendered.has(page);
+  state.page = page;
+  closeDrawer();
+  document.querySelectorAll('.page').forEach(s => s.hidden = s.dataset.page !== page);
+  document.querySelectorAll('[data-nav]').forEach(a => a.dataset.nav === page ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  if (changed || ['compare', 'explore'].includes(page)) { RENDER[page](); rendered.add(page); }
+  renderTray();
+  if (sub){
+    const el = document.getElementById('tr-' + sub);
+    if (el){ el.scrollIntoView({ block: 'start' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1600); }
+  } else if (changed) window.scrollTo(0, 0);
+}
+
+// 切换语言：保留筛选、对比和游戏进度，重画当前页面；预算换算换成对应货币的默认金额
+function setLang(l){
+  if (l === LANG) return;
+  LANG = l;
+  try { localStorage.setItem('gg-lang', l); } catch (e) {}
+  state.cash = null;
+  applyStatic();
+  rendered.clear();
+  const { open, openX } = state;
+  RENDER[state.page](); rendered.add(state.page);
+  renderTray();
+  if (open) openDrawer(open); else if (openX) openExtra(openX);
+}
+
+/* ================= 事件 ================= */
+document.addEventListener('click', e => {
+  const t = e.target;
+  const lg = t.closest('[data-lang]');
+  if (lg){ setLang(lg.dataset.lang); return; }
+
+  const chip = t.closest('.chip');
+  if (chip){ const k = chip.dataset.c; state.colors.has(k) ? state.colors.delete(k) : state.colors.add(k); renderExplore(); return; }
+
+  const seg = t.closest('button[data-k]');
+  if (seg){ const k = seg.dataset.k, v = seg.dataset.v; state[k] = isNaN(+v) ? v : +v; renderExplore(); return; }
+
+  const ex = t.closest('[data-ex]');
+  if (ex){ const k = ex.dataset.ex; state.exclude.has(k) ? state.exclude.delete(k) : state.exclude.add(k); renderExplore(); return; }
+
+  const cmp = t.closest('[data-cmp]');
+  if (cmp){ e.stopPropagation(); toggleCompare(cmp.dataset.cmp); return; }
+
+  const rm = t.closest('[data-rm]');
+  if (rm){ toggleCompare(rm.dataset.rm); return; }
+
+  const preset = t.closest('[data-preset]');
+  if (preset){ state.compare = preset.dataset.preset.split(',').slice(0, MAX_CMP); if (state.page === 'compare') refresh(); else location.hash = '#compare'; return; }
+
+  const op = t.closest('[data-open]');
+  if (op){ openDrawer(op.dataset.open); return; }
+  const opx = t.closest('[data-openx]');
+  if (opx){ openExtra(opx.dataset.openx); return; }
+
+  if (t.closest('[data-close]') || t.id === 'overlay'){ closeDrawer(); return; }
+  if (t.id === 'tray-go'){ location.hash = '#compare'; return; }
+  if (t.id === 'cmp-clear'){ state.compare = []; refresh(); return; }
+  if (t.id === 'reset' || t.id === 'reset-filters'){
+    Object.assign(state, DEFAULTS, { q: '' }); state.colors.clear(); state.exclude.clear(); $('#q').value = ''; renderExplore(); return;
+  }
+  if (t.id === 'more-toggle'){ state.moreOpen = !state.moreOpen; renderMore(); return; }
+  const mg = t.closest('[data-mg]');
+  if (mg){ state.moreGroup = mg.dataset.mg; renderMore(); return; }
+  const eg = t.closest('[data-eg]');
+  if (eg){ state.encGroup = eg.dataset.eg; renderEncyclopedia(); return; }
+
+  const pm = t.closest('[data-mode]');
+  if (pm){ state.playMode = pm.dataset.mode; renderPlay(); return; }
+  const qa = t.closest('[data-qa]');
+  if (qa){ const v = qa.dataset.v; state.quiz.ans[qa.dataset.qa] = isNaN(+v) ? v : +v; state.quiz.step++; renderQuiz(); return; }
+  if (t.closest('[data-qback]')){ state.quiz.step--; renderQuiz(); return; }
+  if (t.closest('[data-qreset]')){ state.quiz = { step: 0, ans: {} }; renderQuiz(); return; }
+  if (t.closest('[data-gstart]')){ state.game = { qs: makeRound(), i: 0, score: 0, streak: 0, best: 0, picked: null }; renderGame(); return; }
+  const gp = t.closest('[data-gpick]');
+  if (gp && state.game && state.game.picked == null){
+    const G = state.game, Q = G.qs[G.i];
+    G.picked = gp.dataset.gpick;
+    if (G.picked === Q.answer){ G.score++; G.streak++; G.best = Math.max(G.best, G.streak); } else G.streak = 0;
+    renderGame();
+    return;
+  }
+  if (t.closest('[data-gnext]')){ state.game.i++; state.game.picked = null; renderGame(); return; }
+
+  const qc = t.closest('[data-cash]');
+  if (qc){ setCash(+qc.dataset.cash, true); return; }
+  const bc = t.closest('[data-bc]');
+  if (bc){
+    const k = bc.dataset.bc;
+    if (k === 'all') state.budColors.clear(); else state.budColors.has(k) ? state.budColors.delete(k) : state.budColors.add(k);
+    buildBudget(); growBudget(); flyCash(6); return;
+  }
+  if (t.id === 'cash-go'){
+    const grid = $('#bud-grid');
+    const below = grid.getBoundingClientRect().top > innerHeight * .6;
+    flyCash(14, () => below && grid.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'start' }));
+    return;
+  }
+
+  const card = t.closest('.card');
+  if (card){ card.dataset.x ? openExtra(card.dataset.x) : openDrawer(card.dataset.id); }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDrawer();
+  const el = e.target;
+  if ((e.key === 'Enter' || e.key === ' ') && (el.classList.contains('card') || el.matches('tr[data-open],tr[data-openx]'))){
+    e.preventDefault();
+    if (el.dataset.x) openExtra(el.dataset.x);
+    else if (el.dataset.openx) openExtra(el.dataset.openx);
+    else openDrawer(el.dataset.id || el.dataset.open);
+  }
+});
+
+$('#q').addEventListener('input', e => { state.q = e.target.value.trim(); renderExplore(); });
+$('#sort').addEventListener('change', e => { state.sort = e.target.value; renderGrid(); });
+$('#f-family').addEventListener('change', e => { state.family = e.target.value; renderExplore(); });
+$('#enc-q').addEventListener('input', e => { state.encQ = e.target.value.trim(); renderEncyclopedia(); });
+$('#enc-sort').addEventListener('change', e => { state.encSort = e.target.value; renderEncyclopedia(); });
+$('#cash-range').addEventListener('input', e => { state.cash = toCash(+e.target.value); updateBudget(false); });
+$('#cash-range').addEventListener('change', () => flyCash(5));
+$('#bud-sort').addEventListener('change', e => { state.budSort = e.target.value; buildBudget(); growBudget(); });
+$('#cmp-add').addEventListener('change', e => { if (e.target.value) toggleCompare(e.target.value); });
+window.addEventListener('hashchange', route);
+
+applyStatic();
+route();
+})();
+</script>
+</body>
+</html>
